@@ -1,0 +1,23 @@
+{
+  "objectInfo" : {
+    "id" : "4YKfBNl35Hfdwa9D4BUfkS",
+    "name" : "Netsuite",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2024-04-15T12:20:56.226Z",
+  "objectRefs" : [ ]
+}
