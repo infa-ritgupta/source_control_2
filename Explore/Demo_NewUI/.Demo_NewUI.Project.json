@@ -1,0 +1,23 @@
+{
+  "objectInfo" : {
+    "id" : "ac2mLENbnWfgS0lDADk9cM",
+    "name" : "Demo_NewUI",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2024-08-08T04:59:47.506Z",
+  "objectRefs" : [ ]
+}
