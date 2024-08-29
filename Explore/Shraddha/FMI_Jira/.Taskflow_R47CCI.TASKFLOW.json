@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "1I9ysvimTMihBsmTDtKJkz",
+    "name" : "Taskflow_R47CCI",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "R8FZbds8NTYglxb-gt-15649-2024-08-28T04:00:27.068Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-08-29T10:38:00.842Z",
+  "objectRefs" : [ {
+    "id" : "7UmKrS9Bq5xbXJJHgzZO41",
+    "name" : "Taskflow_R47CCI",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "185973"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
