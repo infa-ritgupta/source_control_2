@@ -13,17 +13,17 @@
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "local to s3",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-03-03T06:00:24.053Z",
+  "updateTime" : "2025-03-03T09:50:46.171Z",
   "objectRefs" : [ {
-    "id" : "95PxrHV9qE9kTCHsMXg08c",
-    "name" : "invrlx7b2b8.informatica.com",
+    "id" : "1C61MqzLSwicjn5elOyZK8",
+    "name" : "invcdir01",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -31,7 +31,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01001525000000000005"
+        "repoHandle" : "01001525000000000FMF"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -42,8 +42,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "44okwEgCZJzjjE8nonsuyO",
-    "name" : "autos3",
+    "id" : "1BVjmFcGqOEdxCBidHlzK1",
+    "name" : "0_pp_autos3",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -51,7 +51,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100150B000000001K6M"
+        "repoHandle" : "0100150B000000002KP5"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
