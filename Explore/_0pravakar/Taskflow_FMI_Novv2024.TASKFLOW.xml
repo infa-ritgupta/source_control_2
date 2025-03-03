@@ -1,0 +1,189 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>M8NciZBpDUQbgdw-gt-3962-2024-11-21T06:21:04.624Z::tf.xml</types1:EntryId>
+      <types1:Name>Taskflow_FMI_Novv2024</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>atl</types1:CreatedBy>
+      <types1:CreationDate>2024-11-21T06:21:05Z</types1:CreationDate>
+      <types1:ModifiedBy>atl</types1:ModifiedBy>
+      <types1:ModificationDate>2025-02-25T07:01:08Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>atl</types1:PublishedBy>
+      <types1:PublicationDate>2025-02-25T07:01:18Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.Taskflow_FMI_Novv2024/Taskflow_FMI_Novv2024.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="Taskflow_FMI_Novv2024"
+                   name="Taskflow_FMI_Novv2024"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="Ingestion Task 1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl</option>
+                  </options>
+               </field>
+               <field description="" name="File Watch Task 1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:EBF240-MIpackage255-0iUSGCDhgi4ffi83nZKzUS</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="m7k4x0a0" targetId="m7k4x0a8"/>
+               </start>
+               <eventContainer id="m7k4x0a8">
+                  <service id="m7k4x09z">
+                     <title>File Watch Task 1</title>
+                     <serviceName>DIExecuteServiceTaskFileWatchTaskImpl</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">EBF240_MIpackage255</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">0iUSGCDhgi4ffi83nZKzUS</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MI_FILE_LISTENER</parameter>
+                        <parameter name="serviceProviderId" source="constant" updatable="true">filelistener</parameter>
+                        <parameter name="serviceProviderContextPath"
+                                   source="constant"
+                                   updatable="true">filelistener/</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="EBF240-MIpackage255-0iUSGCDhgi4ffi83nZKzUS">temp.File Watch Task 1</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.File Watch Task 1/output/fileEvents">fileEvents</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="m7k4x0a1" targetId="m3qxbahn"/>
+                  <events>
+                     <catch faultField="temp.File Watch Task 1/fault"
+                            id="m7k4x0a7"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                  </events>
+               </eventContainer>
+               <eventContainer id="m3qxbahn">
+                  <service id="m3qxbahf">
+                     <title>Ingestion Task 1</title>
+                     <serviceName>DIExecuteServiceTaskIngestionTaskImpl</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">Nov2025_runbyschedule</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">4cl5ruNAegIbkmNPfq86kl</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MI_TASK</parameter>
+                        <parameter name="serviceProviderId" source="constant" updatable="true">filelistener</parameter>
+                        <parameter name="serviceProviderContextPath"
+                                   source="constant"
+                                   updatable="true">mitask/</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl">temp.Ingestion Task 1</operation>
+                           <operation source="constant"
+                                      to="Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl/input[1]/CATEGORYGeneral[1]/sourceConnectionType">local</operation>
+                           <operation source="constant"
+                                      to="Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl/input[1]/CATEGORYGeneral[1]/targetConnectionType">local</operation>
+                           <operation source="constant"
+                                      to="Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl/input[1]/CATEGORYGeneral[1]/maxFileLimit">0</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Ingestion Task 1/output/successFiles">successFiles</operation>
+                        <operation source="field" to="temp.Ingestion Task 1/output/failedFiles">failedFiles</operation>
+                        <operation source="field" to="temp.Ingestion Task 1/output/fileDetails">fileDetails</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="m3qxbahh" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.Ingestion Task 1/fault"
+                            id="m3qxbahm"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl"
+                              isByCopy="true"
+                              name="Nov2025-runbyschedule-4cl5ruNAegIbkmNPfq86kl">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="EBF240-MIpackage255-0iUSGCDhgi4ffi83nZKzUS"
+                              isByCopy="true"
+                              name="EBF240-MIpackage255-0iUSGCDhgi4ffi83nZKzUS">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>2RJe0k03dSwbF8FLXOuiOK</types1:GUID>
+      <types1:DisplayName>Taskflow_FMI_Novv2024</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-03T05:57:43.045Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "1Cxn66R9gtWfi1zz8RIZ2G",
+    "name" : "Filebeatverify",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "47782"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "saved",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-03-03T05:57:44.246Z",
+  "objectRefs" : [ {
+    "id" : "95PxrHV9qE9kTCHsMXg08c",
+    "name" : "invrlx7b2b8.informatica.com",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01001525000000000005"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "dXdCW7jSUIVdfcTzFIFUqO",
+    "name" : "tf_01",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "iPZx1XmgaabclvA-gt-134162-2024-08-13T12:50:22.129Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-03-03T05:57:44.248Z",
+  "objectRefs" : [ {
+    "id" : "3UtEW91ruELit3goGR3yEH",
+    "name" : "fl_01",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "41444"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/_0pravakar"
+  }, {
+    "id" : "1zkUkZwhIc8g7iFppdCM25",
+    "name" : "fmi_01",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "110513"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/_0pravakar"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

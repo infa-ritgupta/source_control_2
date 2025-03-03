@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "bNpsFv5zsIzky4Zjv9sJK5",
+    "name" : "Taskflow1_Flaswatch",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "LpwT1UuEDySabbe-gt-3875-2024-11-21T06:16:16.602Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-03-03T05:57:44.247Z",
+  "objectRefs" : [ {
+    "id" : "1cBJmfBqJdClqHIz8tapSk",
+    "name" : "FlstartbyScheduler_Nov2024",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "47695"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/_0pravakar"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
