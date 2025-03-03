@@ -1,0 +1,93 @@
+{
+  "objectInfo" : {
+    "id" : "9RaBetxpjn2ilo0hujjUer",
+    "name" : "si_01",
+    "type" : "SIDataflow",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "8d2a0a51-cd71-4c10-ac38-dfabe9484cf2"
+      },
+      "contextAttributes" : [ {
+        "name" : "parentId",
+        "value" : "56HNrMyYVXchwU7IVyvySH"
+      }, {
+        "name" : "version",
+        "value" : "2"
+      } ],
+      "additionalInfo" : {
+        "description" : "flat file to s3",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-03-03T08:47:30.542Z",
+  "objectRefs" : [ {
+    "id" : "1C61MqzLSwicjn5elOyZK8",
+    "name" : "invcdir01",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01001525000000000FMF"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "1IzXTW5qs1CdS1MHA5m0sR",
+    "name" : "_JS_Flat_Src",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100150B000000001MRG"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "1BVjmFcGqOEdxCBidHlzK1",
+    "name" : "0_pp_autos3",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100150B000000002KP5"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "b2b",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
