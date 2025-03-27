@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "jFnSESumd2UhPVPWIw5tIs",
+    "name" : "LBremoval",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "Ev18pNz6HKoJBUh-gt-222918-2025-03-18T04:41:14.93Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-03-27T06:38:29.428Z",
+  "objectRefs" : [ {
+    "id" : "lemi3ioeLebb3NxMHnh9aG",
+    "name" : "LBremoval",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "124847"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "saved",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

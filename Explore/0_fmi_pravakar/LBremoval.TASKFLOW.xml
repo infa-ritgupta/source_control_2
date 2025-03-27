@@ -1,0 +1,123 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>Ev18pNz6HKoJBUh-gt-222918-2025-03-18T04:41:14.93Z::tf.xml</types1:EntryId>
+      <types1:Name>LBremoval</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>atl</types1:CreatedBy>
+      <types1:CreationDate>2025-03-18T04:41:15Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="LBremoval"
+                   name="LBremoval"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="Ingestion Task 1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:LBremoval-lemi3ioeLebb3NxMHnh9aG</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="m8e09xif" targetId="m8e09xim"/>
+               </start>
+               <eventContainer id="m8e09xim">
+                  <service id="m8e09xie">
+                     <title>Ingestion Task 1</title>
+                     <serviceName>DIExecuteServiceTaskIngestionTaskImpl</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">LBremoval</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">lemi3ioeLebb3NxMHnh9aG</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MI_TASK</parameter>
+                        <parameter name="serviceProviderId" source="constant" updatable="true">filelistener</parameter>
+                        <parameter name="serviceProviderContextPath"
+                                   source="constant"
+                                   updatable="true">mitask/</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="LBremoval-lemi3ioeLebb3NxMHnh9aG">temp.Ingestion Task 1</operation>
+                           <operation source="constant"
+                                      to="LBremoval-lemi3ioeLebb3NxMHnh9aG/input[1]/CATEGORYGeneral[1]/sourceConnectionType">local</operation>
+                           <operation source="constant"
+                                      to="LBremoval-lemi3ioeLebb3NxMHnh9aG/input[1]/CATEGORYGeneral[1]/targetConnectionType">local</operation>
+                           <operation source="constant"
+                                      to="LBremoval-lemi3ioeLebb3NxMHnh9aG/input[1]/CATEGORYGeneral[1]/maxFileLimit">0</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Ingestion Task 1/output/successFiles">successFiles</operation>
+                        <operation source="field" to="temp.Ingestion Task 1/output/failedFiles">failedFiles</operation>
+                        <operation source="field" to="temp.Ingestion Task 1/output/fileDetails">fileDetails</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="m8e09xig" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.Ingestion Task 1/fault"
+                            id="m8e09xil"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="LBremoval-lemi3ioeLebb3NxMHnh9aG"
+                              isByCopy="true"
+                              name="LBremoval-lemi3ioeLebb3NxMHnh9aG">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>jFnSESumd2UhPVPWIw5tIs</types1:GUID>
+      <types1:DisplayName>LBremoval</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-27T06:38:29.288Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
