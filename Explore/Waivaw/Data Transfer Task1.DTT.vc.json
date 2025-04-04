@@ -1,19 +1,10 @@
 {
   "name" : "Data Transfer Task1",
+  "description" : "testet",
   "state" : "INVALID",
   "runtimeEnvironmentId" : "01001D25000000000002",
   "runtimeEnvironmentName" : "AParentOrg",
   "properties" : [
-    {
-      "name" : "Source",
-      "type" : "SOURCE",
-      "connectionId" : "01001D0B000000000JUI",
-      "connectionName" : "____autoazuredw",
-      "object" : {
-        "name" : "goutham",
-        "metadataUpdated" : false
-      }
-    },
     {
       "name" : "Target",
       "type" : "TARGET",
@@ -27,19 +18,29 @@
       "handleSpecialChars" : false
     },
     {
+      "name" : "$p_field_map$",
+      "type" : "FIELD_MAPPING"
+    },
+    {
       "name" : "$p_filter_src$",
       "type" : "FILTER",
       "text" : "TRUE",
       "advancedFilterExpression" : false
     },
     {
-      "name" : "$p_field_map$",
-      "type" : "FIELD_MAPPING"
-    },
-    {
       "name" : "$p_exp_fields$",
       "type" : "EXPRESSION"
+    },
+    {
+      "name" : "Source",
+      "type" : "SOURCE",
+      "connectionId" : "01001D0B000000000JUI",
+      "connectionName" : "____autoazuredw",
+      "object" : {
+        "name" : "goutham",
+        "metadataUpdated" : false
+      }
     }
   ],
-  "vcsExportTime" : "2025-04-04 19:32:19 JST"
+  "vcsExportTime" : "2025-04-04 19:33:06 JST"
 }
