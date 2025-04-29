@@ -1,0 +1,37 @@
+{
+  "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
+  "icsGuid" : "gz3jiwvq3icjNu0gHrgm46",
+  "name" : "GitAssetTest",
+  "id" : 10726,
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "local"
+  },
+  "targetConnection" : {
+    "type" : "local"
+  },
+  "lastModified" : 1745921484000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "1",
+    "src.file.delete" : "KEEP",
+    "src.download.path" : "1",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "1"
+  },
+  "agentGroup" : "01000425000000000002",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "10726",
+  "vcsExportTime" : "2025-04-29 03:11:42 PDT"
+}

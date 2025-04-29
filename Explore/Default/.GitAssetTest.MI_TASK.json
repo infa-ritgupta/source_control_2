@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "gz3jiwvq3icjNu0gHrgm46",
+    "name" : "GitAssetTest",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "10726"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-04-29T10:11:42.781Z",
+  "objectRefs" : [ {
+    "id" : "35lsktaF7UKfVzbJ4CiZqf",
+    "name" : "INWPF309175-AAD",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01000425000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}
