@@ -3,13 +3,13 @@
   "icsGuid" : "5kLMWkHHh7Rj1SSZ46wnyj",
   "name" : "Aautos3iwfj3i",
   "id" : 10723,
-  "description" : "dest",
+  "description" : "dest11111",
   "sourceType" : "FILE_LISTENER",
   "sourceConnection" : { },
   "targetConnection" : {
     "type" : "local"
   },
-  "lastModified" : 1745573904000,
+  "lastModified" : 1745909313000,
   "sourceOptions" : {
     "filePickupOption" : "PATTERN",
     "srcPushdownCopy" : "false",
@@ -32,5 +32,5 @@
   "fileListenerAsTrigger" : false,
   "fileListenerAsSource" : true,
   "identifier" : "10723",
-  "vcsExportTime" : "2025-04-28 23:47:59 PDT"
+  "vcsExportTime" : "2025-04-28 23:48:48 PDT"
 }
