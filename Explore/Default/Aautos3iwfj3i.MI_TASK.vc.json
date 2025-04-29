@@ -1,0 +1,36 @@
+{
+  "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
+  "icsGuid" : "5kLMWkHHh7Rj1SSZ46wnyj",
+  "name" : "Aautos3iwfj3i",
+  "id" : 10723,
+  "description" : "dest",
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : { },
+  "targetConnection" : {
+    "type" : "local"
+  },
+  "lastModified" : 1745573904000,
+  "sourceOptions" : {
+    "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "src.file.delete" : "KEEP"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test/goutham"
+  },
+  "agentGroup" : "01000425000000000002",
+  "fileListener" : "0OdNY15qgZNjy5lQ93Gc4J",
+  "fileListenerName" : "testFL",
+  "fileListenerAction" : "10723",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsTrigger" : false,
+  "fileListenerAsSource" : true,
+  "identifier" : "10723",
+  "vcsExportTime" : "2025-04-28 23:47:59 PDT"
+}

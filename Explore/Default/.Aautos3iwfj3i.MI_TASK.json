@@ -19,8 +19,8 @@
       }
     }
   },
-  "dataFileExtension" : "null",
-  "updateTime" : "2025-04-25T09:38:35.666Z",
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-04-29T06:48:00.053Z",
   "objectRefs" : [ {
     "id" : "0OdNY15qgZNjy5lQ93Gc4J",
     "name" : "testFL",
@@ -62,6 +62,6 @@
     },
     "path" : "/SYS"
   } ],
-  "readableFileExtension" : null,
-  "readableFilePresent" : false
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }
