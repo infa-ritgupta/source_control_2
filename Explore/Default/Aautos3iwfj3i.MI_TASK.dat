@@ -1,1 +1,46 @@
-{"orgId":"gkJ6jZGK5MDijkzlhOgXku","icsGuid":"5kLMWkHHh7Rj1SSZ46wnyj","name":"Aautos3iwfj3i","id":10723,"description":"dest111119090","sourceType":"FILE_LISTENER","sourceConnection":{"type":null,"name":null,"connId":null},"targetConnection":{"type":"local","name":"","connId":""},"taskActions":[],"lastModified":1745917776000,"sourceOptions":{"filePickupOption":"PATTERN","srcPushdownCopy":"false","batchSize":"5","fileStability":"false","src.file.delete":"KEEP"},"targetOptions":{"fileExistsAction":"OVERWRITE","tgt.download.path":"/root/test/goutham"},"agentGroup":"01000425000000000002","job":"","schedule":null,"fileListener":"0OdNY15qgZNjy5lQ93Gc4J","fileListenerName":"testFL","fileListenerAction":"10723","emailIds":null,"filePickupOption":"PATTERN","lastRun":null,"threadCount":1,"logLevel":"NORMAL","allowConcurrency":false,"fileListenerAsSource":true,"fileListenerAsTrigger":false,"identifier":"10723"}
+{
+  "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
+  "icsGuid" : "5kLMWkHHh7Rj1SSZ46wnyj",
+  "name" : "Aautos3iwfj3i",
+  "id" : 10723,
+  "description" : "dest111119090",
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : {
+    "type" : null,
+    "name" : null,
+    "connId" : null
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1745917776000,
+  "sourceOptions" : {
+    "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "src.file.delete" : "KEEP"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test/goutham"
+  },
+  "agentGroup" : "01000425000000000002",
+  "job" : "",
+  "schedule" : null,
+  "fileListener" : "0OdNY15qgZNjy5lQ93Gc4J",
+  "fileListenerName" : "testFL",
+  "fileListenerAction" : "10723",
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "10723"
+}
