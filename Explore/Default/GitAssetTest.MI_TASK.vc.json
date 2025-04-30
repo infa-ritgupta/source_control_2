@@ -3,6 +3,7 @@
   "icsGuid" : "gz3jiwvq3icjNu0gHrgm46",
   "name" : "GitAssetTest",
   "id" : 10726,
+  "description" : "22222222",
   "sourceType" : "CONNECTION",
   "sourceConnection" : {
     "type" : "local"
@@ -10,13 +11,14 @@
   "targetConnection" : {
     "type" : "local"
   },
-  "lastModified" : 1745921484000,
+  "lastModified" : 1745993853000,
   "sourceOptions" : {
     "filePatternFilter" : "true",
     "src.file.pattern" : "1",
     "src.file.delete" : "KEEP",
     "src.download.path" : "1",
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "src.file.pattern.type" : "WILDCARD",
     "batchSize" : "5",
     "fileStability" : "false"
@@ -33,5 +35,5 @@
   "fileListenerAsSource" : false,
   "fileListenerAsTrigger" : false,
   "identifier" : "10726",
-  "vcsExportTime" : "2025-04-29 03:11:42 PDT"
+  "vcsExportTime" : "2025-04-29 23:17:44 PDT"
 }
