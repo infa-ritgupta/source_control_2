@@ -1,8 +1,8 @@
 {
   "objectInfo" : {
-    "id" : "1NtQKrcYmpvgh1liwVXbmx",
-    "name" : "Shraddha",
-    "type" : "Project",
+    "id" : "6sKRqqT8zfFka2IyVMppEO",
+    "name" : "FMI_databricks",
+    "type" : "Folder",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
@@ -18,7 +18,7 @@
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-04-30T08:43:04.960Z",
+  "updateTime" : "2025-04-30T08:43:04.959Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
