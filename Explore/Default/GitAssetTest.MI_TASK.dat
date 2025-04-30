@@ -1,1 +1,50 @@
-{"orgId":"gkJ6jZGK5MDijkzlhOgXku","icsGuid":"gz3jiwvq3icjNu0gHrgm46","name":"GitAssetTest","id":10726,"description":"22222222","sourceType":"CONNECTION","sourceConnection":{"type":"local","name":"","connId":""},"targetConnection":{"type":"local","name":"","connId":""},"taskActions":[],"lastModified":1745993853000,"sourceOptions":{"filePatternFilter":"true","src.file.pattern":"1","src.file.delete":"KEEP","src.download.path":"1","filePickupOption":"PATTERN","srcPushdownCopy":"false","src.file.pattern.type":"WILDCARD","batchSize":"5","fileStability":"false"},"targetOptions":{"fileExistsAction":"OVERWRITE","tgt.download.path":"1"},"agentGroup":"01000425000000000002","job":"","schedule":"","fileListener":null,"fileListenerName":null,"fileListenerAction":null,"emailIds":null,"filePickupOption":"PATTERN","lastRun":null,"threadCount":1,"logLevel":"NORMAL","allowConcurrency":false,"fileListenerAsSource":false,"fileListenerAsTrigger":false,"identifier":"10726"}
+{
+  "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
+  "icsGuid" : "gz3jiwvq3icjNu0gHrgm46",
+  "name" : "GitAssetTest",
+  "id" : 10726,
+  "description" : "22222222oskdoe",
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1746006280000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "1",
+    "src.file.delete" : "KEEP",
+    "src.download.path" : "1",
+    "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "1"
+  },
+  "agentGroup" : "01000425000000000002",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : null,
+  "fileListenerName" : null,
+  "fileListenerAction" : null,
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "identifier" : "10726",
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false
+}

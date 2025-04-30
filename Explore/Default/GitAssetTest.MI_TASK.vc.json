@@ -1,9 +1,8 @@
 {
   "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
-  "icsGuid" : "gz3jiwvq3icjNu0gHrgm46",
   "name" : "GitAssetTest",
   "id" : 10726,
-  "description" : "22222222",
+  "description" : "22222222oskdoe",
   "sourceType" : "CONNECTION",
   "sourceConnection" : {
     "type" : "local"
@@ -11,7 +10,7 @@
   "targetConnection" : {
     "type" : "local"
   },
-  "lastModified" : 1745993853000,
+  "lastModified" : 1746006280000,
   "sourceOptions" : {
     "filePatternFilter" : "true",
     "src.file.pattern" : "1",
@@ -32,8 +31,8 @@
   "threadCount" : 1,
   "logLevel" : "NORMAL",
   "allowConcurrency" : false,
+  "identifier" : "10726",
   "fileListenerAsSource" : false,
   "fileListenerAsTrigger" : false,
-  "identifier" : "10726",
-  "vcsExportTime" : "2025-04-29 23:17:44 PDT"
+  "vcsExportTime" : "2025-04-30 02:44:55 PDT"
 }
