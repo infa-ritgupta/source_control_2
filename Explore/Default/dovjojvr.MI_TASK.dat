@@ -1,0 +1,45 @@
+{
+  "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
+  "icsGuid" : "1FNIAtCdFKGcIbpypZfGYk",
+  "name" : "dovjojvr",
+  "id" : 10724,
+  "description" : "",
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : {
+    "type" : null,
+    "name" : null,
+    "connId" : null
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1742554551000,
+  "sourceOptions" : {
+    "filePickupOption" : "PATTERN",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "src.file.delete" : "KEEP"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test/goutham"
+  },
+  "agentGroup" : "01000425000000000002",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : "3MC6aWWA1ZglE3eJhMR7mZ",
+  "fileListenerName" : "testFLLL",
+  "fileListenerAction" : "10724",
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "10724"
+}
