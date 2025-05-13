@@ -3,6 +3,7 @@
   "icsGuid" : "3UKZGelhxMWeGiGQtuQK4A",
   "name" : "Assetcomparison_R50",
   "id" : 203187,
+  "description" : "saved",
   "sourceType" : "FILE_LISTENER",
   "sourceConnection" : { },
   "targetConnection" : {
@@ -10,7 +11,7 @@
     "name" : "0Aautos3",
     "connId" : "01001D0B000000001Q47"
   },
-  "lastModified" : 1747153384000,
+  "lastModified" : 1747153590000,
   "sourceOptions" : {
     "acclerationAction" : "DISABLED",
     "encryption" : "None",
@@ -18,6 +19,7 @@
     "multipartDownloadThreshold" : "100",
     "src.file.delete" : "KEEP",
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "batchSize" : "5",
     "fileStability" : "false"
   },
@@ -41,5 +43,5 @@
   "fileListenerAsSource" : true,
   "fileListenerAsTrigger" : false,
   "identifier" : "203187",
-  "vcsExportTime" : "2025-05-14 01:24:18 JST"
+  "vcsExportTime" : "2025-05-14 01:27:27 JST"
 }

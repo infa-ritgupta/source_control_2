@@ -3,7 +3,7 @@
   "icsGuid" : "3UKZGelhxMWeGiGQtuQK4A",
   "name" : "Assetcomparison_R50",
   "id" : 203187,
-  "description" : "",
+  "description" : "saved",
   "sourceType" : "FILE_LISTENER",
   "sourceConnection" : {
     "type" : null,
@@ -16,7 +16,7 @@
     "connId" : "01001D0B000000001Q47"
   },
   "taskActions" : [ ],
-  "lastModified" : 1747153384000,
+  "lastModified" : 1747153590000,
   "sourceOptions" : {
     "acclerationAction" : "DISABLED",
     "encryption" : "None",
@@ -24,6 +24,7 @@
     "multipartDownloadThreshold" : "100",
     "src.file.delete" : "KEEP",
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "batchSize" : "5",
     "fileStability" : "false"
   },
@@ -38,7 +39,7 @@
   },
   "agentGroup" : "01001D25000000000002",
   "job" : "",
-  "schedule" : "",
+  "schedule" : null,
   "fileListener" : "0CN9p9TplgGesgbisLF7q8",
   "fileListenerName" : "Assetcomparison_R50",
   "fileListenerAction" : "203187",
