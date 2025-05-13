@@ -1,0 +1,50 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "0CN9p9TplgGesgbisLF7q8",
+  "name" : "Assetcomparison_R50",
+  "id" : 43533,
+  "type" : "FILE",
+  "status" : "ENABLE",
+  "agentGroup" : "01001D25000000000002",
+  "connection" : {
+    "type" : "AmazonS3",
+    "name" : "0Aautos3",
+    "connId" : "01001D0B000000001Q47"
+  },
+  "rules" : [
+    {
+      "id" : 81771,
+      "folderPath" : "t-shain-mum/suraj/qa/test/RSFiles",
+      "filePattern" : "*.txt",
+      "postAction" : "NONE",
+      "patternType" : "wildcard",
+      "mandatory" : false,
+      "recursive" : false
+    }
+  ],
+  "triggerDefinition" : {
+    "type" : "DAILY_WITH_INTERVAL",
+    "timezone" : "JST",
+    "startDate" : "20250514",
+    "endDate" : "20250514",
+    "runIndefinitely" : false,
+    "startsAt" : "0000",
+    "endsAt" : "2355",
+    "frequency" : 15,
+    "frequencyUnit" : "SECONDS"
+  },
+  "stopWhenRulesMet" : false,
+  "fileStabilityType" : "SECONDARY_SNAPSHOT",
+  "stabilityCheckInterval" : 10,
+  "notifyExistingFiles" : true,
+  "lastModified" : 1747153351000,
+  "listenerEvents" : {
+    "arrive" : true,
+    "update" : true,
+    "delete" : true
+  },
+  "continueOnError" : false,
+  "filesInScheduleInterval" : false,
+  "identifier" : "43533",
+  "vcsExportTime" : "2025-05-14 01:24:18 JST"
+}

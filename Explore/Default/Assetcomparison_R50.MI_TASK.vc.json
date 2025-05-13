@@ -1,0 +1,45 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "3UKZGelhxMWeGiGQtuQK4A",
+  "name" : "Assetcomparison_R50",
+  "id" : 203187,
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : { },
+  "targetConnection" : {
+    "type" : "AmazonS3",
+    "name" : "0Aautos3",
+    "connId" : "01001D0B000000001Q47"
+  },
+  "lastModified" : 1747153384000,
+  "sourceOptions" : {
+    "acclerationAction" : "DISABLED",
+    "encryption" : "None",
+    "downloadPartSize" : "50",
+    "multipartDownloadThreshold" : "100",
+    "src.file.delete" : "KEEP",
+    "filePickupOption" : "PATTERN",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "acclerationAction" : "DISABLED",
+    "encryption" : "None",
+    "multipartUploadThreshold" : "100",
+    "fileExistsAction" : "OVERWRITE_IFEXIST",
+    "minUploadPartSize" : "50",
+    "compression" : "None",
+    "s3Location" : "t-shain-mum/target"
+  },
+  "agentGroup" : "01001D25000000000002",
+  "fileListener" : "0CN9p9TplgGesgbisLF7q8",
+  "fileListenerName" : "Assetcomparison_R50",
+  "fileListenerAction" : "203187",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "203187",
+  "vcsExportTime" : "2025-05-14 01:24:18 JST"
+}
