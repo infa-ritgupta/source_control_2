@@ -3,7 +3,7 @@
   "icsGuid" : "3UKZGelhxMWeGiGQtuQK4A",
   "name" : "Assetcomparison_R50",
   "id" : 203187,
-  "description" : "saved",
+  "description" : "saved, saved2",
   "sourceType" : "FILE_LISTENER",
   "sourceConnection" : { },
   "targetConnection" : {
@@ -11,7 +11,7 @@
     "name" : "0Aautos3",
     "connId" : "01001D0B000000001Q47"
   },
-  "lastModified" : 1747153590000,
+  "lastModified" : 1747375281000,
   "sourceOptions" : {
     "acclerationAction" : "DISABLED",
     "encryption" : "None",
@@ -43,5 +43,5 @@
   "fileListenerAsSource" : true,
   "fileListenerAsTrigger" : false,
   "identifier" : "203187",
-  "vcsExportTime" : "2025-05-14 01:27:27 JST"
+  "vcsExportTime" : "2025-05-16 15:02:31 JST"
 }
