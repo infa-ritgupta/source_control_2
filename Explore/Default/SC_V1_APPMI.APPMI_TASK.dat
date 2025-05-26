@@ -72,7 +72,7 @@
     "overrides" : {
       "tableRules" : [ {
         "source" : "*",
-        "target" : "SC_*_V2"
+        "target" : "SC_*_V3"
       } ],
       "fieldRules" : [ ]
     },
