@@ -1,0 +1,48 @@
+{
+  "orgId" : "7uayU33VZ37fCwNw1xywW8",
+  "icsGuid" : "f0EWYTBwwUchIZ7QyeD8a4",
+  "name" : "R50CortexFL1",
+  "id" : 10253,
+  "type" : "FILE",
+  "status" : "ENABLE",
+  "agentGroup" : "01000V250000000007Q0",
+  "connection" : {
+    "type" : "local"
+  },
+  "rules" : [
+    {
+      "id" : 10776,
+      "folderPath" : "/root/cortex",
+      "filePattern" : "*.txt",
+      "postAction" : "NONE",
+      "patternType" : "wildcard",
+      "mandatory" : false,
+      "recursive" : false
+    }
+  ],
+  "triggerDefinition" : {
+    "type" : "DAILY_WITH_INTERVAL",
+    "timezone" : "IST",
+    "startDate" : "20250526",
+    "endDate" : "20250526",
+    "runIndefinitely" : false,
+    "startsAt" : "0000",
+    "endsAt" : "2355",
+    "frequency" : 15,
+    "frequencyUnit" : "SECONDS"
+  },
+  "stopWhenRulesMet" : false,
+  "fileStabilityType" : "SECONDARY_SNAPSHOT",
+  "stabilityCheckInterval" : 10,
+  "notifyExistingFiles" : true,
+  "lastModified" : 1748232313000,
+  "listenerEvents" : {
+    "arrive" : true,
+    "update" : true,
+    "delete" : true
+  },
+  "continueOnError" : false,
+  "filesInScheduleInterval" : false,
+  "identifier" : "10253",
+  "vcsExportTime" : "2025-05-26 00:08:59 PDT"
+}
