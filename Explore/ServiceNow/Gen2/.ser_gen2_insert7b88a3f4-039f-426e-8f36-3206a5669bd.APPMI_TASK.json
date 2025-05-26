@@ -1,0 +1,87 @@
+{
+  "objectInfo" : {
+    "id" : "9ISRUj6Gr4kh5CV4QlYBI1",
+    "name" : "ser_gen2_insert7b88a3f4-039f-426e-8f36-3206a5669bd",
+    "type" : "APPMI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "386727"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "CDC_stand_n_cust",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-05-26T06:17:39.936Z",
+  "objectRefs" : [ {
+    "id" : "bhLgfSGHYyJca3AtSdwJCQ",
+    "name" : "invyaminirh01.informatica.com",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0195HS2500000000000J"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "aEBduANvcwmbZ4PWtNQ1Ek",
+    "name" : "ServiceNow_win_basic_sp",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0195HS0B000000000077"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "5SKhLpF9ZGuflwknoAO3E3",
+    "name" : "AIN_GEN2",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0195HS0B00000000005G"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

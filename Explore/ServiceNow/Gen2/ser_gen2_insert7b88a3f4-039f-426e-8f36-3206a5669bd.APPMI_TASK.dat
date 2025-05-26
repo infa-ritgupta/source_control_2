@@ -1,0 +1,107 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0195HS0B000000000077",
+    "targetConnectionId" : "0195HS0B00000000005G",
+    "taskMode" : "CDC",
+    "schedulerId" : null,
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : true,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 10000,
+      "kafkaTargetAttributes" : null,
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : null,
+      "cdcCompatibleFormat" : true,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "10000",
+        "ai.cdc.interval.days" : "0",
+        "ai.cdc.interval.mins" : "5",
+        "ai.cdc.interval.hours" : "0"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "checkpointAll" : "false",
+        "targetDirectory" : "servicenow_cdc1",
+        "checkpointCommits" : "false",
+        "checkpointTimeFrequency" : "0",
+        "formatEncoderPrintHeader" : "true",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "true",
+        "rat.audit.columns.opowner" : "false",
+        "checkpointMessageFrequency" : "0",
+        "rat.cdcfile.target.directory" : "servicenow_cdc1",
+        "rat.cdcfile.target.tag.directories" : "false"
+      },
+      "runtimePropsMap" : {
+        "rat.cdcfile.cycle.dml.limit" : "10000",
+        "rat.cdcfile.lowact.flush.mins" : "0",
+        "rat.cdcfile.lowact.flush.hours" : "0",
+        "rat.cdcfile.cycle.interval.days" : "0",
+        "rat.cdcfile.cycle.interval.mins" : "1",
+        "rat.cdcfile.cycle.interval.secs" : "0",
+        "rat.cdcfile.cycle.interval.hours" : "0"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0195HS2500000000000J",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "SERVICENOW",
+    "target" : "geetha",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "Servicenow_*_ADLS"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "diagnostic_rule",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "u_cust_table",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 0
+}
