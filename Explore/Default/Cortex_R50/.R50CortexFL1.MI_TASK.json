@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "3868NQC7uM4dC89ODOpxSZ",
+    "name" : "R50CortexFL1",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "11864"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-05-26T08:15:31.775Z",
+  "objectRefs" : [ {
+    "id" : "6QkvvTtLxFUiQychOgM06v",
+    "name" : "invsuse15sp4pam01",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01000V250000000007Q0"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "f0EWYTBwwUchIZ7QyeD8a4",
+    "name" : "R50CortexFL1",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "10253"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "saved",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default/Cortex_R50"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

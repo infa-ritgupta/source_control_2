@@ -1,0 +1,45 @@
+{
+  "orgId" : "7uayU33VZ37fCwNw1xywW8",
+  "icsGuid" : "3868NQC7uM4dC89ODOpxSZ",
+  "name" : "R50CortexFL1",
+  "id" : 11864,
+  "description" : "",
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : {
+    "type" : null,
+    "name" : null,
+    "connId" : null
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1748232259000,
+  "sourceOptions" : {
+    "filePickupOption" : "PATTERN",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "src.file.delete" : "KEEP"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "01000V250000000007Q0",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : "f0EWYTBwwUchIZ7QyeD8a4",
+  "fileListenerName" : "R50CortexFL1",
+  "fileListenerAction" : "11864",
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "identifier" : "11864",
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false
+}
