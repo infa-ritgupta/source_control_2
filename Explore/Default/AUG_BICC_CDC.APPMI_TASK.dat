@@ -1,0 +1,106 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0103MX0B00000000005S",
+    "targetConnectionId" : "0103MX0B00000000005L",
+    "taskMode" : "CDC",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "STAGE"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "SPECIFIC_DATE",
+        "value" : "20240813093430"
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "50000",
+        "selectionMode" : "RULE_BASED",
+        "ai.cdc.interval.mins" : "5",
+        "appmi.enable.verbose.log" : "true",
+        "appmi.retry.max.attempts" : "5",
+        "appmi.retry.min.sleep.time" : "500",
+        "ai.oraclefusion.module.name" : "ERP_SCM",
+        "ai.oraclefusion.interface.type" : "BICC",
+        "oraclefusioncloud.decimal.trim.scale" : "true"
+      },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "targetBucket" : "",
+        "targetDirectory" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.optype" : "false",
+        "rat.cdcfile.target.directory" : "",
+        "writerSnowflakeIngestionMethod" : "",
+        "writerSnowflakeDeferredMergeInterval" : "3600",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0103MX250000000007QV",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "ORACLE_FUSION_CLOUD",
+    "target" : "A00RG",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "AUG_BICC_CDC_*"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "FscmTopModelAM*FinApInvTransactionsAM*InvoiceLinePVO",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 21
+}
