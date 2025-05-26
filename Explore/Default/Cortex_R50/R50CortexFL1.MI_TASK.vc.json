@@ -8,9 +8,10 @@
   "targetConnection" : {
     "type" : "local"
   },
-  "lastModified" : 1748232259000,
+  "lastModified" : 1748247601000,
   "sourceOptions" : {
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "batchSize" : "5",
     "fileStability" : "false",
     "src.file.delete" : "KEEP"
@@ -20,8 +21,8 @@
     "tgt.download.path" : "/root/test2"
   },
   "agentGroup" : "01000V250000000007Q0",
-  "fileListener" : "f0EWYTBwwUchIZ7QyeD8a4",
-  "fileListenerName" : "R50CortexFL1",
+  "fileListener" : "2QIBzQJhzUYh0BHtPpcesw",
+  "fileListenerName" : "R50CortexFL20",
   "fileListenerAction" : "11864",
   "filePickupOption" : "PATTERN",
   "threadCount" : 1,
@@ -30,5 +31,5 @@
   "identifier" : "11864",
   "fileListenerAsSource" : true,
   "fileListenerAsTrigger" : false,
-  "vcsExportTime" : "2025-05-26 01:15:31 PDT"
+  "vcsExportTime" : "2025-05-26 01:21:00 PDT"
 }

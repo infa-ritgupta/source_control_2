@@ -16,9 +16,10 @@
     "connId" : ""
   },
   "taskActions" : [ ],
-  "lastModified" : 1748232259000,
+  "lastModified" : 1748247601000,
   "sourceOptions" : {
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "batchSize" : "5",
     "fileStability" : "false",
     "src.file.delete" : "KEEP"
@@ -30,8 +31,8 @@
   "agentGroup" : "01000V250000000007Q0",
   "job" : "",
   "schedule" : "",
-  "fileListener" : "f0EWYTBwwUchIZ7QyeD8a4",
-  "fileListenerName" : "R50CortexFL1",
+  "fileListener" : "2QIBzQJhzUYh0BHtPpcesw",
+  "fileListenerName" : "R50CortexFL20",
   "fileListenerAction" : "11864",
   "emailIds" : null,
   "filePickupOption" : "PATTERN",
