@@ -20,7 +20,7 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-04-29T10:19:31.560Z",
+  "updateTime" : "2025-05-28T15:31:44.133Z",
   "objectRefs" : [ {
     "id" : "35lsktaF7UKfVzbJ4CiZqf",
     "name" : "INWPF309175-AAD",
@@ -42,6 +42,6 @@
     },
     "path" : "/SYS"
   } ],
-  "readableFileExtension" : null,
-  "readableFilePresent" : false
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }
