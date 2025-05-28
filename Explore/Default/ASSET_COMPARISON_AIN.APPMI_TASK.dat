@@ -48,14 +48,14 @@
         "salesforce.bulkv2.enable.partitioning" : "false"
       },
       "targetPropsMap" : {
-        "applyMode" : "standard",
+        "applyMode" : "audit",
         "targetBucket" : "",
         "auditColumnsPrefix" : "INFA_",
         "rat.audit.columns.opseq" : "false",
         "formatEncoderPrintHeader" : "false",
         "rat.audit.columns.optime" : "false",
         "rat.audit.columns.optxid" : "false",
-        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.optype" : "true",
         "rat.audit.columns.opowner" : "false",
         "rat.target.columns.cycleId" : "false",
         "writerSnowflakeIngestionMethod" : "",
@@ -82,7 +82,7 @@
     "overrides" : {
       "tableRules" : [ {
         "source" : "*",
-        "target" : "SFDC_*_STANDARD_qa"
+        "target" : "SFDC_*_AUDIT_qa"
       } ],
       "fieldRules" : [ ]
     },
