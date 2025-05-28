@@ -1,0 +1,51 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "i77YLb1LveIbgfoCvcGMK6",
+  "name" : "FileList - FTPS",
+  "id" : 114273,
+  "description" : "",
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "Advanced FTPS V2",
+    "name" : "autoftps",
+    "connId" : "01001D0B000000000JUB"
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1662019078000,
+  "sourceOptions" : {
+    "src.file.pickup.by.name" : "LISTOFFILES",
+    "src.file.delete" : "KEEP",
+    "src.file.pickup.file.list" : "File1.txt,../Arun/1.txt",
+    "src.download.path" : "/umar",
+    "filePickupOption" : "FILELIST",
+    "srcPushdownCopy" : "false",
+    "stabilityCheckInterval" : "10",
+    "batchSize" : "5",
+    "fileStability" : "true",
+    "src.file.transfermode" : "AUTO"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/umar"
+  },
+  "agentGroup" : "01001D25000000000002",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : null,
+  "fileListenerName" : null,
+  "fileListenerAction" : null,
+  "emailIds" : null,
+  "filePickupOption" : "FILELIST",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "114273"
+}

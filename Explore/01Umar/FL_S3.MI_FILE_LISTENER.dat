@@ -1,0 +1,57 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "0EzHU9xoKdUg6PJmUEz2EI",
+  "name" : "FL_S3",
+  "id" : 39742,
+  "type" : "FILE",
+  "description" : "",
+  "status" : "ENABLE",
+  "agentGroup" : "01001D2500000000001O",
+  "connection" : {
+    "type" : "AmazonS3",
+    "name" : "___Aautos3",
+    "connId" : "01001D0B000000000JUD"
+  },
+  "rules" : [ {
+    "id" : 75089,
+    "folderPath" : "./aditi/skdummy",
+    "filePattern" : "*",
+    "postAction" : "NONE",
+    "patternType" : "wildcard",
+    "mandatory" : false,
+    "recursive" : false
+  } ],
+  "eventListenerRules" : null,
+  "triggerDefinition" : {
+    "type" : "DAILY_WITH_INTERVAL",
+    "timezone" : "IST",
+    "startDate" : "20230829",
+    "endDate" : "20230829",
+    "runIndefinitely" : false,
+    "startsAt" : "0000",
+    "endsAt" : "2355",
+    "frequency" : 15,
+    "frequencyUnit" : "SECONDS",
+    "daysToRun" : null,
+    "monthlyMode" : null,
+    "dayOfMonth" : null,
+    "weekOfMonth" : null,
+    "dayOfWeek" : null
+  },
+  "stopWhenRulesMet" : false,
+  "fileStabilityType" : "SECONDARY_SNAPSHOT",
+  "stabilityCheckInterval" : 10,
+  "notifyExistingFiles" : false,
+  "lastModified" : 1693296831000,
+  "job" : "",
+  "schedule" : "",
+  "listenerEvents" : {
+    "arrive" : true,
+    "update" : false,
+    "delete" : false
+  },
+  "emailIds" : null,
+  "continueOnError" : false,
+  "filesInScheduleInterval" : false,
+  "identifier" : "39742"
+}
