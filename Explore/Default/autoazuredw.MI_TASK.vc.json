@@ -1,6 +1,5 @@
 {
   "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
-  "icsGuid" : "691BzNUZGPPh2AzPbJgek2",
   "name" : "autoazuredw",
   "id" : 10725,
   "sourceType" : "CONNECTION",
@@ -36,8 +35,8 @@
   "threadCount" : 1,
   "logLevel" : "NORMAL",
   "allowConcurrency" : false,
-  "fileListenerAsSource" : false,
-  "fileListenerAsTrigger" : false,
   "identifier" : "10725",
-  "vcsExportTime" : "2025-04-29 23:42:57 PDT"
+  "fileListenerAsTrigger" : false,
+  "fileListenerAsSource" : false,
+  "vcsExportTime" : "2025-05-28 08:27:20 PDT"
 }

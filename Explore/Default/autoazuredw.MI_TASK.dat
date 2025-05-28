@@ -45,7 +45,7 @@
   "threadCount" : 1,
   "logLevel" : "NORMAL",
   "allowConcurrency" : false,
-  "fileListenerAsSource" : false,
+  "identifier" : "10725",
   "fileListenerAsTrigger" : false,
-  "identifier" : "10725"
+  "fileListenerAsSource" : false
 }
