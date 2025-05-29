@@ -46,6 +46,6 @@
   "logLevel" : "NORMAL",
   "allowConcurrency" : false,
   "identifier" : "10725",
-  "fileListenerAsTrigger" : false,
-  "fileListenerAsSource" : false
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false
 }
