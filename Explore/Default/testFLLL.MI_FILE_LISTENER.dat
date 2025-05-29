@@ -1,0 +1,57 @@
+{
+  "orgId" : "gkJ6jZGK5MDijkzlhOgXku",
+  "icsGuid" : "3MC6aWWA1ZglE3eJhMR7mZ",
+  "name" : "testFLLL",
+  "id" : 10322,
+  "type" : "FILE",
+  "description" : "",
+  "status" : "ENABLE",
+  "agentGroup" : "01000425000000000002",
+  "connection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "rules" : [ {
+    "id" : 10363,
+    "folderPath" : "/wufguehfiue",
+    "filePattern" : "*",
+    "postAction" : "NONE",
+    "patternType" : "wildcard",
+    "mandatory" : false,
+    "recursive" : false
+  } ],
+  "eventListenerRules" : null,
+  "triggerDefinition" : {
+    "type" : "DAILY_WITH_INTERVAL",
+    "timezone" : "America/Los_Angeles",
+    "startDate" : "20250321",
+    "endDate" : "20250321",
+    "runIndefinitely" : false,
+    "startsAt" : "0000",
+    "endsAt" : "2355",
+    "frequency" : 15,
+    "frequencyUnit" : "SECONDS",
+    "daysToRun" : null,
+    "monthlyMode" : null,
+    "dayOfMonth" : null,
+    "weekOfMonth" : null,
+    "dayOfWeek" : null
+  },
+  "stopWhenRulesMet" : false,
+  "fileStabilityType" : "SECONDARY_SNAPSHOT",
+  "stabilityCheckInterval" : 10,
+  "notifyExistingFiles" : false,
+  "lastModified" : 1742554488000,
+  "job" : "",
+  "schedule" : "",
+  "listenerEvents" : {
+    "arrive" : true,
+    "update" : false,
+    "delete" : false
+  },
+  "emailIds" : null,
+  "continueOnError" : true,
+  "filesInScheduleInterval" : false,
+  "identifier" : "10322"
+}
