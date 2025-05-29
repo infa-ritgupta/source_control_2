@@ -1,0 +1,12 @@
+{
+  "parentId" : "1QanFOLvZiUhictr1hZyqN",
+  "version" : 1,
+  "blob" : "{\"agentId\":\"01000425000000000006\",\"nodes\":[{\"id\":\"010047b0-cd93-4ae3-9b31-8d8ee6537d53\",\"name\":\"tempSITask_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"/\"},{\"key\":\"initialPosition\",\"value\":\"Current Time\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"0100040B000000000012\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"f00003a0-6ec1-4a20-a49d-2f93c37967f6\",\"name\":\"tempSITask_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"/\"},{\"key\":\"interimDirectory\",\"value\":\"/\"},{\"key\":\"rolloverSize\",\"value\":\"1024\"},{\"key\":\"rolloverEvents\",\"value\":\"100\"},{\"key\":\"rolloverTime\",\"value\":\"300000\"}],\"connectionId\":\"0100040B000000000011\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"b3d3bd34-108f-4686-934a-ad3aa87bbb32\",\"name\":\"edge0\",\"from\":\"tempSITask_source\",\"to\":\"tempSITask_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
+  "description" : null,
+  "customAttributes" : {
+    "project" : "Default",
+    "agentId" : "01000425000000000006",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent"
+  }
+}
