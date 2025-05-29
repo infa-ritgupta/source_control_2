@@ -1,0 +1,13 @@
+{
+  "parentId" : "1QanFOLvZiUhictr1hZyqN",
+  "version" : 2,
+  "blob" : "{\"agentId\":\"01000425000000000006\",\"nodes\":[{\"id\":\"96486635-ddb0-4648-9e45-09d489912920\",\"name\":\"sanityFMITest_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"1\"},{\"key\":\"initialPosition\",\"value\":\"Current Time\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"0100040B000000000012\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"ef0e6ce9-c1cb-42fa-a7e8-5700fee0ef09\",\"name\":\"sanityFMITest_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"test\"},{\"key\":\"interimDirectory\",\"value\":\"/\"},{\"key\":\"rolloverSize\",\"value\":\"1024\"},{\"key\":\"rolloverEvents\",\"value\":\"100\"},{\"key\":\"rolloverTime\",\"value\":\"300000\"}],\"connectionId\":\"0100040B000000000011\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"6bc52753-e463-462d-a385-886a5a90a151\",\"name\":\"edge0\",\"from\":\"sanityFMITest_source\",\"to\":\"sanityFMITest_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
+  "description" : "ihi",
+  "customAttributes" : {
+    "project" : "Default",
+    "agentId" : "01000425000000000006",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "1"
+  }
+}
