@@ -26,7 +26,7 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-05-29T04:26:24.502Z",
+  "updateTime" : "2025-05-29T17:23:58.120Z",
   "objectRefs" : [ {
     "id" : "8LypIDFi4cYhEudyHvFg8D",
     "name" : "flatfilemdm",
@@ -88,6 +88,6 @@
     },
     "path" : "/SYS"
   } ],
-  "readableFileExtension" : null,
-  "readableFilePresent" : false
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }
