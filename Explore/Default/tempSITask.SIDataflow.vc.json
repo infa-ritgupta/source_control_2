@@ -60,5 +60,12 @@
     },
     "logLevel" : "INFO",
     "config" : [ ]
+  },
+  "customAttributes" : {
+    "project" : "Default",
+    "agentId" : "01000425000000000006",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "2"
   }
 }
