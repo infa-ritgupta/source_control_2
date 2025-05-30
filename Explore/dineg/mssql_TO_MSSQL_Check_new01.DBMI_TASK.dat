@@ -51,7 +51,7 @@
       },
       "targetPropsMap" : {
         "applyMode" : "standard",
-        "oracle.duuny" : "true",
+        "oracle.dummy" : "true",
         "targetBucket" : "",
         "auditColumnsPrefix" : "INFA_",
         "rat.audit.columns.opseq" : "false",
