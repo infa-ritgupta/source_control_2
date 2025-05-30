@@ -1,7 +1,7 @@
 {
   "agentId" : "01000425000000000006",
   "nodes" : [ {
-    "id" : "f13d82fe-14ee-412e-b906-3131d65984a3",
+    "id" : "555d83af-a7d9-4b78-ae93-2a83a534aaa4",
     "name" : "tempSITask_source",
     "serviceType" : "source",
     "config" : [ {
@@ -21,7 +21,7 @@
     "type" : "",
     "metaMetadata" : ""
   }, {
-    "id" : "38c46d06-92d8-4b88-b393-a1a39da71eb4",
+    "id" : "de30189e-a2c9-4148-9f54-861320539276",
     "name" : "tempSITask_target",
     "serviceType" : "target",
     "config" : [ {
@@ -29,7 +29,7 @@
       "value" : "/"
     }, {
       "key" : "interimDirectory",
-      "value" : "/"
+      "value" : "/temp"
     }, {
       "key" : "rolloverSize",
       "value" : "1024"
@@ -45,7 +45,7 @@
     "metaMetadata" : ""
   } ],
   "edges" : [ {
-    "id" : "8e77bc4f-428b-42d1-b3f4-645d01a80169",
+    "id" : "1c796637-7b67-47b9-a6f6-6392f8d8c720",
     "name" : "edge0",
     "from" : "tempSITask_source",
     "to" : "tempSITask_target",
