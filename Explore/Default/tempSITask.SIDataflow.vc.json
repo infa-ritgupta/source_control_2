@@ -1,7 +1,7 @@
 {
   "agentId" : "01000425000000000006",
   "nodes" : [ {
-    "id" : "555d83af-a7d9-4b78-ae93-2a83a534aaa4",
+    "id" : "3b34ca30-f4b0-4a8f-9b32-818bb8015fac",
     "name" : "tempSITask_source",
     "serviceType" : "source",
     "config" : [ {
@@ -21,7 +21,7 @@
     "type" : "",
     "metaMetadata" : ""
   }, {
-    "id" : "de30189e-a2c9-4148-9f54-861320539276",
+    "id" : "70003f41-c056-497a-a1b6-dabb3fa091ae",
     "name" : "tempSITask_target",
     "serviceType" : "target",
     "config" : [ {
@@ -45,7 +45,7 @@
     "metaMetadata" : ""
   } ],
   "edges" : [ {
-    "id" : "1c796637-7b67-47b9-a6f6-6392f8d8c720",
+    "id" : "8bca1370-063f-4965-a199-21383fa2d565",
     "name" : "edge0",
     "from" : "tempSITask_source",
     "to" : "tempSITask_target",
@@ -66,7 +66,7 @@
     "agentId" : "01000425000000000006",
     "messageFormat" : "binary",
     "environmentType" : "Secure Agent",
-    "currentVersion" : "2"
+    "currentVersion" : "3"
   },
-  "description" : null
+  "description" : "hello"
 }

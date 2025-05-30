@@ -1,13 +1,13 @@
 {
   "parentId" : "1QanFOLvZiUhictr1hZyqN",
-  "version" : 3,
-  "blob" : "{\"agentId\":\"01000425000000000006\",\"nodes\":[{\"id\":\"555d83af-a7d9-4b78-ae93-2a83a534aaa4\",\"name\":\"tempSITask_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\".\"},{\"key\":\"initialPosition\",\"value\":\"Current Time\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"0100040B000000000011\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"de30189e-a2c9-4148-9f54-861320539276\",\"name\":\"tempSITask_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"/\"},{\"key\":\"interimDirectory\",\"value\":\"/temp\"},{\"key\":\"rolloverSize\",\"value\":\"1024\"},{\"key\":\"rolloverEvents\",\"value\":\"100\"},{\"key\":\"rolloverTime\",\"value\":\"300000\"}],\"connectionId\":\"0100040B000000000011\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"1c796637-7b67-47b9-a6f6-6392f8d8c720\",\"name\":\"edge0\",\"from\":\"tempSITask_source\",\"to\":\"tempSITask_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
-  "description" : null,
+  "version" : 4,
+  "blob" : "{\"agentId\":\"01000425000000000006\",\"nodes\":[{\"id\":\"3b34ca30-f4b0-4a8f-9b32-818bb8015fac\",\"name\":\"tempSITask_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\".\"},{\"key\":\"initialPosition\",\"value\":\"Current Time\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"0100040B000000000011\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"70003f41-c056-497a-a1b6-dabb3fa091ae\",\"name\":\"tempSITask_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"/\"},{\"key\":\"interimDirectory\",\"value\":\"/temp\"},{\"key\":\"rolloverSize\",\"value\":\"1024\"},{\"key\":\"rolloverEvents\",\"value\":\"100\"},{\"key\":\"rolloverTime\",\"value\":\"300000\"}],\"connectionId\":\"0100040B000000000011\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"8bca1370-063f-4965-a199-21383fa2d565\",\"name\":\"edge0\",\"from\":\"tempSITask_source\",\"to\":\"tempSITask_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
+  "description" : "hello",
   "customAttributes" : {
     "project" : "Default",
     "agentId" : "01000425000000000006",
     "messageFormat" : "binary",
     "environmentType" : "Secure Agent",
-    "currentVersion" : "2"
+    "currentVersion" : "3"
   }
 }
