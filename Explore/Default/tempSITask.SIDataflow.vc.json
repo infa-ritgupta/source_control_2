@@ -67,5 +67,6 @@
     "messageFormat" : "binary",
     "environmentType" : "Secure Agent",
     "currentVersion" : "2"
-  }
+  },
+  "description" : null
 }
