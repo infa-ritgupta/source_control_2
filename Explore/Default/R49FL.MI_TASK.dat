@@ -1,0 +1,45 @@
+{
+  "orgId" : "2rtbgV87nqHbNKbPy1Gj6d",
+  "icsGuid" : "03mDJs1UtW3ghE3v96TZQl",
+  "name" : "R49FL",
+  "id" : 10022,
+  "description" : "",
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : {
+    "type" : null,
+    "name" : null,
+    "connId" : null
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1745568394000,
+  "sourceOptions" : {
+    "filePickupOption" : "PATTERN",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "src.file.delete" : "KEEP"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "01002I250000000007PV",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : "6wCdbhmeQUSbM0KBmTe1kV",
+  "fileListenerName" : "R49FL",
+  "fileListenerAction" : "10022",
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "10022"
+}

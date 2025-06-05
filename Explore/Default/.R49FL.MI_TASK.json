@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "03mDJs1UtW3ghE3v96TZQl",
+    "name" : "R49FL",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "10022"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-06-05T11:55:59.376Z",
+  "objectRefs" : [ {
+    "id" : "2jayopPRv2mgdSJhGSNuc1",
+    "name" : "invrlx7b2b7.informatica.com",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01002I250000000007PV"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "6wCdbhmeQUSbM0KBmTe1kV",
+    "name" : "R49FL",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "10015"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}
