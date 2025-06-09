@@ -87,7 +87,7 @@
     "overrides" : {
       "tableRules" : [ {
         "source" : "*",
-        "target" : "*3MTEST1_EDITED"
+        "target" : "TEST_*3M"
       } ],
       "fieldRules" : [ ]
     },
