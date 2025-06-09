@@ -40,8 +40,10 @@
         "lobsEnabled" : "false",
         "selectionMode" : "BROWSE_BASED",
         "dbmi.cdc.technique" : "CDC_TABLES",
+        "dbmi.cdc.interval.days" : "0",
         "dbmi.cdc.interval.mins" : "5",
         "readerInputIsPersisted" : "false",
+        "dbmi.cdc.interval.hours" : "0",
         "dbmi.cdc.query.based.column.type" : "COLUMN_TYPE_TIMESTAMP",
         "pwx.cdcreader.postgresql.connection.repl.slotname" : "",
         "pwx.cdcreader.postgresql.connection.repl.publication" : ""
@@ -67,7 +69,9 @@
         "rat.target.columns.last.replicated.time" : "true",
         "targetIdentifiersEnableCaseTransformation" : "false"
       },
-      "runtimePropsMap" : { },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
       "historyManagerSettings" : null
     },
     "runtimeEnvId" : "0119TU25000000000078",
@@ -83,7 +87,7 @@
     "overrides" : {
       "tableRules" : [ {
         "source" : "*",
-        "target" : "*3MTEST1"
+        "target" : "*3MTEST1_EDITED"
       } ],
       "fieldRules" : [ ]
     },
@@ -123,5 +127,5 @@
   },
   "datatypeChangeRules" : [ ],
   "dataFilterConditions" : [ ],
-  "version" : 23
+  "version" : 26
 }

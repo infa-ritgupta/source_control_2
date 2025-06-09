@@ -13,14 +13,14 @@
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "ADDED",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-06-09T05:05:11.637Z",
+  "updateTime" : "2025-06-09T11:44:21.180Z",
   "objectRefs" : [ {
     "id" : "51YEZIKPFa8j5uZXzuQu44",
     "name" : "Snowflake_nba",
