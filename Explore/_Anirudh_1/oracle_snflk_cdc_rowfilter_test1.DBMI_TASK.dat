@@ -1,0 +1,116 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0119TU0B000000000009",
+    "targetConnectionId" : "0119TU0B000000000005",
+    "taskMode" : "CDC",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "aa"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "CDC",
+        "journalName" : "",
+        "lobsEnabled" : "false",
+        "selectionMode" : "BROWSE_BASED",
+        "dbmi.cdc.technique" : "LOG_BASED_CDC",
+        "dbmi.cdc.interval.mins" : "5",
+        "readerInputIsPersisted" : "false",
+        "dbmi.cdc.query.based.column.type" : "COLUMN_TYPE_TIMESTAMP",
+        "pwx.cdcreader.postgresql.connection.repl.slotname" : "",
+        "pwx.cdcreader.postgresql.connection.repl.publication" : ""
+      },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "targetBucket" : "",
+        "targetDirectory" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.optype" : "false",
+        "rat.cdcfile.target.directory" : "",
+        "writerSnowflakeIngestionMethod" : "",
+        "writerSnowflakeDeferredMergeInterval" : "3600",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0119TU250000000000A0",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "AUSQA",
+    "target" : "AV_TEST2",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "*_target_1"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "-",
+      "pattern" : "*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "PERSON3",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ {
+    "tableName" : "PERSON3",
+    "filterCondition" : "\"ID\" > 18",
+    "filterType" : "Basic"
+  } ],
+  "version" : 23
+}
