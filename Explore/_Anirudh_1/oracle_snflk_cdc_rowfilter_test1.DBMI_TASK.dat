@@ -40,8 +40,10 @@
         "lobsEnabled" : "false",
         "selectionMode" : "BROWSE_BASED",
         "dbmi.cdc.technique" : "LOG_BASED_CDC",
+        "dbmi.cdc.interval.days" : "0",
         "dbmi.cdc.interval.mins" : "5",
         "readerInputIsPersisted" : "false",
+        "dbmi.cdc.interval.hours" : "0",
         "dbmi.cdc.query.based.column.type" : "COLUMN_TYPE_TIMESTAMP",
         "pwx.cdcreader.postgresql.connection.repl.slotname" : "",
         "pwx.cdcreader.postgresql.connection.repl.publication" : ""
@@ -49,15 +51,27 @@
       "targetPropsMap" : {
         "applyMode" : "standard",
         "targetBucket" : "",
-        "targetDirectory" : "",
+        "checkpointAll" : "true",
+        "checkpointCommits" : "false",
         "auditColumnsPrefix" : "INFA_",
+        "checkpointTimeFrequency" : "0",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
         "rat.audit.columns.optype" : "false",
-        "rat.cdcfile.target.directory" : "",
+        "rat.audit.columns.opowner" : "false",
+        "checkpointMessageFrequency" : "0",
+        "rat.target.columns.cycleId" : "false",
         "writerSnowflakeIngestionMethod" : "",
+        "rat.cdcfile.target.tag.directories" : "false",
         "writerSnowflakeDeferredMergeInterval" : "3600",
+        "rat.target.columns.last.replicated.time" : "false",
         "targetIdentifiersEnableCaseTransformation" : "false"
       },
-      "runtimePropsMap" : { },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
       "historyManagerSettings" : null
     },
     "runtimeEnvId" : "0119TU250000000000A0",
@@ -73,7 +87,7 @@
     "overrides" : {
       "tableRules" : [ {
         "source" : "*",
-        "target" : "*_target_1"
+        "target" : "*_target_1_1"
       } ],
       "fieldRules" : [ ]
     },
@@ -112,5 +126,5 @@
     "filterCondition" : "\"ID\" > 18",
     "filterType" : "Basic"
   } ],
-  "version" : 23
+  "version" : 26
 }
