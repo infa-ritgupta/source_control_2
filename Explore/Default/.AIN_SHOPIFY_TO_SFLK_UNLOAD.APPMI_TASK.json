@@ -13,14 +13,14 @@
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "ADDED_DESCRIPTION",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-06-09T05:06:53.649Z",
+  "updateTime" : "2025-06-09T05:07:43.109Z",
   "objectRefs" : [ {
     "id" : "9KTCgMXMD6DhmTbRyYOOko",
     "name" : "AIN_Snowflake",

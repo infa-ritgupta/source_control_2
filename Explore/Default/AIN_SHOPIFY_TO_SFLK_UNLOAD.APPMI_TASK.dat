@@ -38,13 +38,22 @@
       },
       "targetPropsMap" : {
         "targetBucket" : "",
-        "targetDirectory" : "",
+        "targetDirectory" : "{TableName}_{Timestamp}",
         "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "rat.target.columns.cycleId" : "false",
         "writerSnowflakeIngestionMethod" : "",
+        "rat.target.columns.last.replicated.time" : "false",
         "targetIdentifiersEnableCaseTransformation" : "false"
       },
       "runtimePropsMap" : {
-        "useGenericDatatypeFramework" : "true"
+        "useGenericDatatypeFramework" : "true",
+        "writerRecoveryEnableCycleUpdates" : "false"
       },
       "historyManagerSettings" : null
     },
@@ -73,5 +82,5 @@
   },
   "datatypeChangeRules" : [ ],
   "dataFilterConditions" : [ ],
-  "version" : 22
+  "version" : 26
 }
