@@ -1,0 +1,87 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0119TU0B000000000003",
+    "targetConnectionId" : "0119TU0B00000000000N",
+    "taskMode" : "UNLOAD",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "UNDEFINED",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : null
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : null,
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "50000",
+        "selectionMode" : "RULE_BASED",
+        "ai.salesforce.unload.api.type" : "bulkv2",
+        "salesforce.decimal.trim.scale" : "true",
+        "ai.unload.fetch.deleted.archived.data" : "false",
+        "salesforce.bulkv2.enable.partitioning" : "false"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : "{TableName}_{Timestamp}",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "true",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "S3FileTargetEncryptionType" : "NONE",
+        "rat.target.schema.directory" : "newui",
+        "rat.target.useConnectionDir" : "true",
+        "formatEncoderIncludeInfaBigIntSequence" : "false"
+      },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0119TU25000000000003",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "SALESFORCE",
+    "target" : "",
+    "overrides" : {
+      "tableRules" : [ ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "BAG__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 26
+}
