@@ -77,6 +77,11 @@
       "pattern" : "BAG__c",
       "fieldsSet" : [ ],
       "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "PEN__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
     } ],
     "schemaChangeHandlingOptions" : [ ],
     "columnTransformations" : [ ]
