@@ -1,0 +1,67 @@
+{
+  "agentId" : "0101UX25000000000002",
+  "nodes" : [ {
+    "id" : "13a0d0c0-871a-4dc0-88e5-dbf5a21299eb",
+    "name" : "SIdeploygcs_source",
+    "serviceType" : "source",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "kafkadeploysrcgcssdel"
+    } ],
+    "connectionId" : "0101UX0B00000000003W"
+  }, {
+    "id" : "22eddcc8-3125-4bc1-bd05-f11cb7186fe3",
+    "name" : "SIdeploygcs_target",
+    "serviceType" : "target",
+    "config" : [ {
+      "key" : "gcsContentType",
+      "value" : ""
+    }, {
+      "key" : "nativeName",
+      "value" : "testgcstrgtsdel"
+    }, {
+      "key" : "gcsObjectAcl",
+      "value" : ""
+    }, {
+      "key" : "gcpProxyPort",
+      "value" : "0"
+    }, {
+      "key" : "gcsContentDispositionType",
+      "value" : "inline"
+    }, {
+      "key" : "gcpRetryCount",
+      "value" : "6"
+    }, {
+      "key" : "gcsBucket",
+      "value" : "sitestbucketgcs"
+    }, {
+      "key" : "gcsServerSideEncryptionKey",
+      "value" : ""
+    }, {
+      "key" : "gcpProxyHost",
+      "value" : ""
+    } ],
+    "connectionId" : "0101UX0B00000000003Z",
+    "type" : "googlestoragev2",
+    "metaMetadata" : "Generic"
+  } ],
+  "edges" : [ {
+    "id" : "ddc282cf-5ecc-42f3-8fe3-61fca4b262df",
+    "name" : "SIdeploygcs_sourcetestgcs_target",
+    "from" : "SIdeploygcs_source",
+    "to" : "SIdeploygcs_target",
+    "config" : [ ]
+  } ],
+  "runtimeOptions" : {
+    "maxLogSize" : {
+      "value" : 10,
+      "unit" : "MB"
+    },
+    "config" : [ ]
+  },
+  "customAttributes" : {
+    "project" : "RestAutomation1",
+    "environmentType" : "Secure Agent"
+  },
+  "description" : "TestAutomation"
+}
