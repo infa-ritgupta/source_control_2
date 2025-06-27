@@ -16,15 +16,17 @@
     "connId" : ""
   },
   "taskActions" : [ ],
-  "lastModified" : 1746180462000,
+  "lastModified" : 1751015521000,
   "sourceOptions" : {
     "filePatternFilter" : "true",
     "src.file.pattern" : "*",
     "src.file.delete" : "KEEP",
-    "src.download.path" : "c:\\tmp",
+    "src.download.path" : "c:\\tmp1",
     "filePickupOption" : "PATTERN",
-    "src.file.pattern.type" : "WILDCARD",
+    "srcPushdownCopy" : "false",
+    "src.file.pattern.type" : "REGEX",
     "batchSize" : "5",
+    "src.file.deduplicate" : "true",
     "fileStability" : "false"
   },
   "targetOptions" : {

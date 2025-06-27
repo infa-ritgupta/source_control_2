@@ -10,15 +10,17 @@
   "targetConnection" : {
     "type" : "local"
   },
-  "lastModified" : 1746180462000,
+  "lastModified" : 1751015521000,
   "sourceOptions" : {
     "filePatternFilter" : "true",
     "src.file.pattern" : "*",
     "src.file.delete" : "KEEP",
-    "src.download.path" : "c:\\tmp",
+    "src.download.path" : "c:\\tmp1",
     "filePickupOption" : "PATTERN",
-    "src.file.pattern.type" : "WILDCARD",
+    "srcPushdownCopy" : "false",
+    "src.file.pattern.type" : "REGEX",
     "batchSize" : "5",
+    "src.file.deduplicate" : "true",
     "fileStability" : "false"
   },
   "targetOptions" : {
@@ -33,5 +35,5 @@
   "fileListenerAsSource" : false,
   "fileListenerAsTrigger" : false,
   "identifier" : "202000",
-  "vcsExportTime" : "2025-05-02 19:08:13 JST"
+  "vcsExportTime" : "2025-06-27 18:13:05 JST"
 }
