@@ -1,1 +1,88 @@
-{"common":{"sourceConnectionId":"01000R0B000000000004","targetConnectionId":"01000R0B000000000006","taskMode":"UNLOAD","schedulerId":"","runtimeSettings":{"latency":10,"targetSchemaCreationMode":"CREATE_TARGET","directoryPerTable":false,"targetEncodingFormat":"CSV","enableAuditColumns":false,"rowsPerTargetFile":100000,"kafkaTargetAttributes":{"topicPerTable":false,"topicName":null,"tablePrefix":null,"tableSuffix":null,"includeSchemaName":false,"asyncWrite":true,"alternateSerializer":false,"kafkaProducerProps":null},"avroTargetAttributes":null,"avroAsParquetRequested":false,"parquetTargetAttributes":null,"snowflakeTargetAttributes":{"stage":"test"},"cdcCompatibleFormat":false,"cdcStartPoint":null,"targetCompressionType":"NONE","useV2NamingConventions":true,"sourcePropsMap":{"loadType":"UNLOAD","lobsEnabled":"false","selectionMode":"RULE_BASED","unloadIncludeViews":"false"},"targetPropsMap":{"targetBucket":"","targetDirectory":"","auditColumnsPrefix":"INFA_","writerSnowflakeIngestionMethod":""},"runtimePropsMap":{},"historyManagerSettings":null},"runtimeEnvId":"01000R25000000000002"},"replicationRules":{"source":"stqa","target":"UNLOAD","overrides":{"tableRules":[],"fieldRules":[]},"sourceSet":[{"op":"+","pattern":"*","fieldsSet":[]}],"schemaChangeHandlingOptions":[],"columnTransformations":[]},"datatypeChangeRules":[],"version":16}
+{
+  "common" : {
+    "sourceConnectionId" : "0195HS0B000000000033",
+    "targetConnectionId" : "0195HS0B000000000047",
+    "taskMode" : "UNLOAD",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "test"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : null,
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "UNLOAD",
+        "lobsEnabled" : "false",
+        "selectionMode" : "RULE_BASED",
+        "unloadIncludeViews" : "false",
+        "unloadFlashbackDisabled" : "false",
+        "unload.enable.source.partitioning" : "false"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : "{TableName}_{Timestamp}",
+        "auditColumnsPrefix" : "INFA_qa",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "rat.target.columns.cycleId" : "false",
+        "writerSnowflakeIngestionMethod" : "",
+        "rat.target.columns.last.replicated.time" : "false",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0195HS2500000000000D",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "stqa",
+    "target" : "UNLOAD",
+    "overrides" : {
+      "tableRules" : [ ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 26
+}

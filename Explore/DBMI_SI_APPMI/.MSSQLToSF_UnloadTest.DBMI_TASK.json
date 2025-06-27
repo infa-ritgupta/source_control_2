@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "0PnaOOHzXykjniIr9YpLAU",
+    "id" : "5onMjjIEnsPkwQsTa4b423",
     "name" : "MSSQLToSF_UnloadTest",
     "type" : "DBMI_TASK",
     "metadata" : {
@@ -9,20 +9,40 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "14"
+        "repoHandle" : "336025"
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
         "description" : "",
-        "contentType" : null,
+        "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2024-01-11T08:58:41.509Z",
+  "updateTime" : "2025-06-27T11:04:59.683Z",
   "objectRefs" : [ {
-    "id" : "aecThBa2zKlguuqY5EQP2T",
+    "id" : "8CWyoXwINWlbNUbC9K9lwO",
+    "name" : "invr83pam28.informatica.com",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0195HS2500000000000D"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "4fDlyrUcagndc6QT5uOVcF",
     "name" : "DBMI_Snowflake",
     "type" : "Connection",
     "metadata" : {
@@ -31,7 +51,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000R0B000000000006"
+        "repoHandle" : "0195HS0B000000000047"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -42,28 +62,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "3H6lRBLrFJCdQSDlBtjWCj",
-    "name" : "emsqldb2",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01000R25000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "lzwEp99qC0teSxYLN9kMGx",
-    "name" : "chiru_mss_tgt_CDI",
+    "id" : "7hoG5ayQd5RjiF0cH3CV6D",
+    "name" : "CDC_STAGING_CONNECTION_MSSQL",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -71,7 +71,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000R0B000000000004"
+        "repoHandle" : "0195HS0B000000000033"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -81,5 +81,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }
