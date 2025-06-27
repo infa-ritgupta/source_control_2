@@ -1,0 +1,57 @@
+{
+  "agentId" : "0195HS2500000000000D",
+  "nodes" : [ {
+    "id" : "9cce74ee-8a05-47ea-93c7-97a1ca2614bd",
+    "name" : "Kafka To Kafka_target",
+    "serviceType" : "target",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "tar"
+    }, {
+      "key" : "batchSize",
+      "value" : "1048576"
+    }, {
+      "key" : "mdFetchTimeout",
+      "value" : "5000"
+    }, {
+      "key" : "producerProperties",
+      "value" : null
+    } ],
+    "connectionId" : "0195HS0B00000000000N",
+    "type" : "",
+    "metaMetadata" : ""
+  }, {
+    "id" : "bdbc2cda-21c1-4057-96fb-ccb3d5b75399",
+    "name" : "Kafka To Kafka_source",
+    "serviceType" : "source",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "src"
+    }, {
+      "key" : "consumerProperties",
+      "value" : null
+    } ],
+    "connectionId" : "0195HS0B00000000000N",
+    "type" : "",
+    "metaMetadata" : ""
+  } ],
+  "edges" : [ {
+    "id" : "3f768da7-1b91-4643-b69b-efa24d6298e5",
+    "name" : "edge0",
+    "from" : "Kafka To Kafka_source",
+    "to" : "Kafka To Kafka_target",
+    "type" : "success",
+    "config" : [ ],
+    "metaMetadata" : ""
+  } ],
+  "runtimeOptions" : {
+    "maxLogSize" : {
+      "value" : 10,
+      "unit" : "MB"
+    },
+    "logLevel" : "INFO",
+    "config" : [ ]
+  },
+  "customAttributes" : { },
+  "description" : null
+}
