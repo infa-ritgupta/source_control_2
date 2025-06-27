@@ -85,7 +85,10 @@
     "source" : "inc",
     "target" : "SQLUNLOAD",
     "overrides" : {
-      "tableRules" : [ ],
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "abc_*"
+      } ],
       "fieldRules" : [ ]
     },
     "sourceSet" : [ {

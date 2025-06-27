@@ -20,7 +20,7 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-06-27T11:11:09.744Z",
+  "updateTime" : "2025-06-27T11:12:02.713Z",
   "objectRefs" : [ {
     "id" : "9P74EXM0obXhxnO7LIeKqY",
     "name" : "_Padmini_agent",
@@ -61,26 +61,6 @@
       }
     },
     "path" : "/SYS"
-  }, {
-    "id" : "30pExxXH66jf0BhZ0uZIgI",
-    "name" : "Log_group_cdc__20250613094954",
-    "type" : "DBMI_GROUP_TASK",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 1,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "417121"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "Binary",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Default"
   }, {
     "id" : "6IY5xqc9vY8fUBi919mQMZ",
     "name" : "AIN_Snowflake",
