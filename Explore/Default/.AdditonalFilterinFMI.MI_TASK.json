@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "a19jxUwglSyigQZVlW4QAX",
+    "name" : "AdditonalFilterinFMI",
+    "type" : "MI_TASK",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "25959"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-06-30T08:27:39.485Z",
+  "objectRefs" : [ {
+    "id" : "5ZQWYwwuHw8bVTMXklKgea",
+    "name" : "invub14b2b03",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0102X425000000000015"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "lBB6Aq6af6KiZtzXwSy84e",
+    "name" : "AdditonalFilterinFMI",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "11946"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/FL_FMI_Load/siub"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

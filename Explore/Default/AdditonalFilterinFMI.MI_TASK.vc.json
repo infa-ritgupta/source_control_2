@@ -1,0 +1,37 @@
+{
+  "orgId" : "70JcUcykaF9lGD1QUceQGW",
+  "icsGuid" : "a19jxUwglSyigQZVlW4QAX",
+  "name" : "AdditonalFilterinFMI",
+  "id" : 25959,
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : { },
+  "targetConnection" : {
+    "type" : "local"
+  },
+  "lastModified" : 1653571318000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "*.pgp",
+    "src.file.delete" : "KEEP",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "0102X425000000000015",
+  "fileListener" : "lBB6Aq6af6KiZtzXwSy84e",
+  "fileListenerName" : "AdditonalFilterinFMI",
+  "fileListenerAction" : "25959",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "25959",
+  "vcsExportTime" : "2025-06-30 01:27:39 PDT"
+}

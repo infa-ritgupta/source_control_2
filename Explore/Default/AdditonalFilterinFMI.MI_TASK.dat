@@ -1,0 +1,48 @@
+{
+  "orgId" : "70JcUcykaF9lGD1QUceQGW",
+  "icsGuid" : "a19jxUwglSyigQZVlW4QAX",
+  "name" : "AdditonalFilterinFMI",
+  "id" : 25959,
+  "description" : "",
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : {
+    "type" : null,
+    "name" : null,
+    "connId" : null
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1653571318000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "*.pgp",
+    "src.file.delete" : "KEEP",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "0102X425000000000015",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : "lBB6Aq6af6KiZtzXwSy84e",
+  "fileListenerName" : "AdditonalFilterinFMI",
+  "fileListenerAction" : "25959",
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "25959"
+}
