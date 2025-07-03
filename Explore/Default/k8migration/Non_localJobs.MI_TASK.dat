@@ -1,0 +1,58 @@
+{
+  "orgId" : "2rtbgV87nqHbNKbPy1Gj6d",
+  "icsGuid" : "310z9uiYXlOcBgVuYEVj6o",
+  "name" : "Non_localJobs",
+  "id" : 10007,
+  "description" : "",
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "AmazonS3",
+    "name" : "autos3",
+    "connId" : "01002I0B000000000002"
+  },
+  "targetConnection" : {
+    "type" : "AmazonS3",
+    "name" : "autos3",
+    "connId" : "01002I0B000000000002"
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1751541367000,
+  "sourceOptions" : {
+    "src.file.pattern" : "*.txt",
+    "downloadPartSize" : "50",
+    "multipartDownloadThreshold" : "100",
+    "filePickupOption" : "PATTERN",
+    "acclerationAction" : "DISABLED",
+    "filePatternFilter" : "true",
+    "encryption" : "None",
+    "src.file.delete" : "KEEP",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "s3SourceLocation" : "t-shain-mum/suraj/qa/test/RSFiles"
+  },
+  "targetOptions" : {
+    "acclerationAction" : "DISABLED",
+    "encryption" : "None",
+    "multipartUploadThreshold" : "100",
+    "fileExistsAction" : "OVERWRITE_IFEXIST",
+    "minUploadPartSize" : "50",
+    "compression" : "None",
+    "s3Location" : "t-shain-mum/target"
+  },
+  "agentGroup" : "01002I250000000007PV",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : null,
+  "fileListenerName" : null,
+  "fileListenerAction" : null,
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "10007"
+}
