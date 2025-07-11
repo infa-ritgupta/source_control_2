@@ -39,18 +39,29 @@
         "lobsEnabled" : "false",
         "selectionMode" : "BROWSE_BASED",
         "dbmi.cdc.technique" : "LOG_BASED_CDC",
+        "dbmi.cdc.interval.days" : "0",
+        "dbmi.cdc.interval.mins" : "5",
         "readerInputIsPersisted" : "false",
+        "dbmi.cdc.interval.hours" : "0",
         "dbmi.cdc.query.based.column.type" : "COLUMN_TYPE_TIMESTAMP"
       },
       "targetPropsMap" : {
         "applyMode" : "standard",
         "targetBucket" : "",
-        "targetDirectory" : "",
+        "checkpointAll" : "true",
+        "checkpointCommits" : "false",
         "auditColumnsPrefix" : "INFA_",
+        "checkpointTimeFrequency" : "0",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
         "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "checkpointMessageFrequency" : "0",
         "rat.target.columns.cycleId" : "false",
-        "rat.cdcfile.target.directory" : "",
         "writerSnowflakeIngestionMethod" : "",
+        "rat.cdcfile.target.tag.directories" : "false",
         "writerSnowflakeDeferredMergeInterval" : "3600",
         "rat.target.columns.last.replicated.time" : "false",
         "targetIdentifiersEnableCaseTransformation" : "false"
@@ -71,7 +82,10 @@
     "source" : "SUPERPIPE_AUTO",
     "target" : "A00RG",
     "overrides" : {
-      "tableRules" : [ ],
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "V2_*"
+      } ],
       "fieldRules" : [ ]
     },
     "sourceSet" : [ {
