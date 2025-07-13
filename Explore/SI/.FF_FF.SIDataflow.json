@@ -1,0 +1,73 @@
+{
+  "objectInfo" : {
+    "id" : "8H3aOfXG2EIjwGBhMjzHuS",
+    "name" : "FF_FF",
+    "type" : "SIDataflow",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "35a2f20e-5a23-44de-9922-57919f0f2b36"
+      },
+      "contextAttributes" : [ {
+        "name" : "parentId",
+        "value" : "4mJoGMaIsNXfXhGIM5F80i"
+      }, {
+        "name" : "version",
+        "value" : "1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-07-13T17:16:40.602Z",
+  "objectRefs" : [ {
+    "id" : "5xBcNbIzEeof2Ogd1c1skV",
+    "name" : "FlatFIle_PrivateLink",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100140B000000000029"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "01DwVIYBGsOf9oNYd6x4iQ",
+    "name" : "azurecac2",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01001425000000000009"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}
