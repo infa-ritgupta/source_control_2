@@ -1,0 +1,104 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0100EQ0B00000000002Y",
+    "targetConnectionId" : "0100EQ0B00000000002T",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "1"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "CDC_COMBINED",
+        "journalName" : "",
+        "lobsEnabled" : "false",
+        "selectionMode" : "RULE_BASED",
+        "readerInputIsPersisted" : "false",
+        "unload.enable.source.partitioning" : "false"
+      },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "targetBucket" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "rat.cdcfile.target.tag.directories" : "false"
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0100EQ25000000000002",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "dbo",
+    "target" : "ALK",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "maycan_*_tgt1"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "tc01",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 11
+}
