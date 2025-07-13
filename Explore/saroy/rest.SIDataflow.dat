@@ -1,0 +1,13 @@
+{
+  "parentId" : "h2mMJZVUgYTh4r8A1nJpmb",
+  "version" : 4,
+  "blob" : "{\"agentId\":\"01000I25000000000002\",\"nodes\":[{\"id\":\"566f2b09-5be3-4520-88dc-2c30397ad8e4\",\"name\":\"rest_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"getAllCourses\"},{\"key\":\"header\",\"value\":\"[]\"},{\"key\":\"alertType\",\"value\":\"Raise Alert\"},{\"key\":\"scheme\",\"value\":\"HTTP\"},{\"key\":\"schedulePeriod\",\"value\":\"30\"}],\"connectionId\":\"01000I0B00000000000N\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"55ad61b2-6fbf-43cd-9714-5128a5f9cb2b\",\"name\":\"rest_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"trgt\"},{\"key\":\"batchSize\",\"value\":\"1048576\"},{\"key\":\"mdFetchTimeout\",\"value\":\"5000\"},{\"key\":\"producerProperties\",\"value\":null}],\"connectionId\":\"01000I0B000000000008\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"47ca47d9-8369-4e50-947d-9f25c26bdb78\",\"name\":\"edge0\",\"from\":\"rest_source\",\"to\":\"rest_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
+  "description" : null,
+  "customAttributes" : {
+    "project" : "Default",
+    "agentId" : "01000I25000000000002",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "1"
+  }
+}
