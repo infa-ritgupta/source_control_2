@@ -1,0 +1,93 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0102V80B00000000001L",
+    "targetConnectionId" : "0102V80B00000000000O",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : true,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : null
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "journalName" : "",
+        "readerInputIsPersisted" : "false"
+      },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "targetBucket" : "",
+        "targetDirectory" : ""
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0102V825000000000002",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "stqa",
+    "target" : "AA",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "datatype_money",
+        "target" : "chiru_msscombined_3novpod1_win"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "datatype_money",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 0
+}
