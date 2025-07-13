@@ -1,0 +1,103 @@
+{
+  "common" : {
+    "sourceConnectionId" : "01000F0B00000000003I",
+    "targetConnectionId" : "01000F0B00000000003I",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : ""
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "CDC_COMBINED",
+        "journalName" : "",
+        "lobsEnabled" : "true",
+        "selectionMode" : "RULE_BASED",
+        "dbmi.cdc.technique" : "CDC_TABLES",
+        "dbmi.cdc.interval.mins" : "5",
+        "readerInputIsPersisted" : "false",
+        "unload.enable.source.partitioning" : "false",
+        "pwx.cdcreader.postgresql.connection.repl.slotname" : "",
+        "pwx.cdcreader.postgresql.connection.repl.publication" : ""
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.optype" : "false",
+        "rat.cdcfile.target.directory" : ""
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "01000F2500000000000F",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "DEMO_SRC",
+    "target" : "DEMO_TGT",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "UK_TGT_*"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 16
+}
