@@ -1,0 +1,143 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0102V80B00000000004F",
+    "targetConnectionId" : "0102V80B000000000054",
+    "taskMode" : "CDC",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "AVRO",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : {
+        "avroFormatType" : "AVRO_FLAT",
+        "avroSerializationType" : "JSON",
+        "schemaDirectory" : null,
+        "compressionType" : "UNCOMPRESSED",
+        "compressionLevel" : 1
+      },
+      "avroAsParquetRequested" : true,
+      "parquetTargetAttributes" : {
+        "pageSize" : 1048576,
+        "rowGroupSize" : 134217728,
+        "dictionaryPageSize" : "SIZE_1_MB",
+        "maxPaddingSizeSize" : "PADDING_0",
+        "usingDictionaryEncoding" : true,
+        "compressionType" : "UNCOMPRESSED"
+      },
+      "snowflakeTargetAttributes" : {
+        "stage" : ""
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "CDC",
+        "journalName" : "",
+        "lobsEnabled" : "false",
+        "selectionMode" : "RULE_BASED",
+        "dbmi.cdc.technique" : "LOG_BASED_CDC",
+        "readerTracePayload" : "true",
+        "dbmi.cdc.interval.mins" : "5",
+        "readerInputIsPersisted" : "false",
+        "dbmi.cdc.query.based.column.type" : "COLUMN_TYPE_TIMESTAMP",
+        "pwx.cdcreader.postgresql.connection.repl.slotname" : "",
+        "pwx.cdcreader.postgresql.connection.repl.publication" : ""
+      },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "targetBucket" : "",
+        "checkpointAll" : "true",
+        "targetDirectory" : "tgt131",
+        "checkpointCommits" : "false",
+        "auditColumnsPrefix" : "INFA_",
+        "createUnmanagedTables" : "false",
+        "writeMaxRetryAttempts" : "20",
+        "writerCustomRetryCodes" : "500051",
+        "checkpointTimeFrequency" : "0",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "checkpointMessageFrequency" : "0",
+        "rat.cdcfile.target.directory" : "tgt131",
+        "writeFailureMillisBetweenRetries" : "10000",
+        "rat.cdcfile.target.tag.directories" : "false",
+        "writerEnableTransactionalConnectionRetry" : "true"
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0102V825000000000002",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "Table_schema2",
+    "target" : "dk_mssql",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "tgt131_*_56773"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "-",
+      "pattern" : "TKG5",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "TKG5",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 22
+}
