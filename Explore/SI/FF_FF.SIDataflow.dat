@@ -1,12 +1,13 @@
 {
   "parentId" : "4mJoGMaIsNXfXhGIM5F80i",
-  "version" : 1,
-  "blob" : "{\"agentId\":\"01001425000000000009\",\"nodes\":[{\"id\":\"c7754b7d-ac4f-45ab-94dc-badede1f5832\",\"name\":\"FF_FF_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"ff.txt\"},{\"key\":\"interimDirectory\",\"value\":\"/data\"},{\"key\":\"rolloverSize\",\"value\":\"1024\"},{\"key\":\"rolloverEvents\",\"value\":\"100\"},{\"key\":\"rolloverTime\",\"value\":\"300000\"}],\"connectionId\":\"0100140B000000000029\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"22756c30-f432-420b-896d-b48c40ab31b4\",\"name\":\"FF_FF_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"CloudDIAgent Notice Document.txt\"},{\"key\":\"initialPosition\",\"value\":\"Beginning of File\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"0100140B000000000029\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"14cbf658-e387-4999-b10b-aa2b4de9898b\",\"name\":\"edge0\",\"from\":\"FF_FF_source\",\"to\":\"FF_FF_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
-  "description" : null,
+  "version" : 2,
+  "blob" : "{\"agentId\":\"01001425000000000009\",\"nodes\":[{\"id\":\"02fa2fb8-9c70-4220-a8b4-c5ec05578de7\",\"name\":\"FF_FF_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"CloudDIAgent Notice Document.txt\"},{\"key\":\"initialPosition\",\"value\":\"Beginning of File\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"0100140B000000000029\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"9c1db86a-d9d7-4fdf-9887-0fa70e556eb5\",\"name\":\"FF_FF_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"ff.txt\"},{\"key\":\"interimDirectory\",\"value\":\"/data\"},{\"key\":\"rolloverSize\",\"value\":\"1024\"},{\"key\":\"rolloverEvents\",\"value\":\"100\"},{\"key\":\"rolloverTime\",\"value\":\"300000\"}],\"connectionId\":\"0100140B000000000029\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"f67c798b-3f63-4fb0-8847-3eb0bc05232a\",\"name\":\"edge0\",\"from\":\"FF_FF_source\",\"to\":\"FF_FF_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
+  "description" : "c2",
   "customAttributes" : {
     "project" : "SI",
     "agentId" : "01001425000000000009",
     "messageFormat" : "binary",
-    "environmentType" : "Secure Agent"
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "1"
   }
 }
