@@ -1,0 +1,34 @@
+{
+  "orgId" : "e1Zy8WzyM61c5JCfacE5sR",
+  "icsGuid" : "2AmwBMGPpv3foyx2bLLewX",
+  "name" : "Julycall",
+  "id" : 25934,
+  "sourceType" : "FILE_LISTENER",
+  "sourceConnection" : { },
+  "targetConnection" : {
+    "type" : "local"
+  },
+  "lastModified" : 1752460088000,
+  "sourceOptions" : {
+    "filePickupOption" : "PATTERN",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "src.file.delete" : "KEEP"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "0023XR25000000000015",
+  "fileListener" : "4J7GQeVAgcLkco9IejGlc5",
+  "fileListenerName" : "Julycall",
+  "fileListenerAction" : "25934",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "identifier" : "25934",
+  "fileListenerAsSource" : true,
+  "fileListenerAsTrigger" : false,
+  "vcsExportTime" : "2025-07-14 22:36:49 PDT"
+}

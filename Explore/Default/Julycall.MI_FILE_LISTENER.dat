@@ -1,0 +1,57 @@
+{
+  "orgId" : "e1Zy8WzyM61c5JCfacE5sR",
+  "icsGuid" : "4J7GQeVAgcLkco9IejGlc5",
+  "name" : "Julycall",
+  "id" : 25181,
+  "type" : "FILE",
+  "description" : "",
+  "status" : "ENABLE",
+  "agentGroup" : "0023XR25000000000015",
+  "connection" : {
+    "type" : "local",
+    "name" : "",
+    "connId" : ""
+  },
+  "rules" : [ {
+    "id" : 53771,
+    "folderPath" : "/root/test",
+    "filePattern" : "*txt",
+    "postAction" : "NONE",
+    "patternType" : "wildcard",
+    "mandatory" : false,
+    "recursive" : false
+  } ],
+  "eventListenerRules" : null,
+  "triggerDefinition" : {
+    "type" : "DAILY_WITH_INTERVAL",
+    "timezone" : "IST",
+    "startDate" : "20250714",
+    "endDate" : "20250714",
+    "runIndefinitely" : false,
+    "startsAt" : "0000",
+    "endsAt" : "2355",
+    "frequency" : 15,
+    "frequencyUnit" : "SECONDS",
+    "daysToRun" : null,
+    "monthlyMode" : null,
+    "dayOfMonth" : null,
+    "weekOfMonth" : null,
+    "dayOfWeek" : null
+  },
+  "stopWhenRulesMet" : false,
+  "fileStabilityType" : "SECONDARY_SNAPSHOT",
+  "stabilityCheckInterval" : 10,
+  "notifyExistingFiles" : true,
+  "lastModified" : 1752460042000,
+  "job" : "",
+  "schedule" : "",
+  "listenerEvents" : {
+    "arrive" : true,
+    "update" : true,
+    "delete" : true
+  },
+  "emailIds" : null,
+  "continueOnError" : false,
+  "filesInScheduleInterval" : false,
+  "identifier" : "25181"
+}
