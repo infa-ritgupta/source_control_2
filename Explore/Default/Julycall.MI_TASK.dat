@@ -3,7 +3,7 @@
   "icsGuid" : "2AmwBMGPpv3foyx2bLLewX",
   "name" : "Julycall",
   "id" : 25934,
-  "description" : "",
+  "description" : "saved1",
   "sourceType" : "FILE_LISTENER",
   "sourceConnection" : {
     "type" : null,
@@ -16,9 +16,10 @@
     "connId" : ""
   },
   "taskActions" : [ ],
-  "lastModified" : 1752460088000,
+  "lastModified" : 1752557869000,
   "sourceOptions" : {
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "batchSize" : "5",
     "fileStability" : "false",
     "src.file.delete" : "KEEP"
@@ -29,7 +30,7 @@
   },
   "agentGroup" : "0023XR25000000000015",
   "job" : "",
-  "schedule" : "",
+  "schedule" : null,
   "fileListener" : "4J7GQeVAgcLkco9IejGlc5",
   "fileListenerName" : "Julycall",
   "fileListenerAction" : "25934",
