@@ -1,0 +1,71 @@
+{
+  "agentId" : "01000I25000000000006",
+  "nodes" : [ {
+    "id" : "b7e665d4-70ee-44b0-8ebf-561141631336",
+    "name" : "ff_pl_ff_target",
+    "serviceType" : "target",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "out.log"
+    }, {
+      "key" : "interimDirectory",
+      "value" : "/tmp"
+    }, {
+      "key" : "rolloverSize",
+      "value" : "1024"
+    }, {
+      "key" : "rolloverEvents",
+      "value" : "100"
+    }, {
+      "key" : "rolloverTime",
+      "value" : "300000"
+    } ],
+    "connectionId" : "01000I0B00000000002P",
+    "type" : "",
+    "metaMetadata" : ""
+  }, {
+    "id" : "c8b1b211-bcaa-42e0-b244-f2730b2a4cda",
+    "name" : "ff_pl_ff_source",
+    "serviceType" : "source",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "siagent.log"
+    }, {
+      "key" : "initialPosition",
+      "value" : "Current Time"
+    }, {
+      "key" : "rolloverPattern",
+      "value" : null
+    }, {
+      "key" : "tailingMode",
+      "value" : "Single file"
+    } ],
+    "connectionId" : "01000I0B00000000002O",
+    "type" : "",
+    "metaMetadata" : ""
+  } ],
+  "edges" : [ {
+    "id" : "b5a685e6-8971-46c9-93af-42ff80b52308",
+    "name" : "edge0",
+    "from" : "ff_pl_ff_source",
+    "to" : "ff_pl_ff_target",
+    "type" : "success",
+    "config" : [ ],
+    "metaMetadata" : ""
+  } ],
+  "runtimeOptions" : {
+    "maxLogSize" : {
+      "value" : 10,
+      "unit" : "MB"
+    },
+    "logLevel" : "INFO",
+    "config" : [ ]
+  },
+  "customAttributes" : {
+    "project" : "Chiru",
+    "agentId" : "01000I25000000000006",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent"
+  },
+  "description" : null
+}
