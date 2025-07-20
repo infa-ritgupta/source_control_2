@@ -1,7 +1,27 @@
 {
   "agentId" : "01000I25000000000006",
   "nodes" : [ {
-    "id" : "b7e665d4-70ee-44b0-8ebf-561141631336",
+    "id" : "19b74746-0053-4c54-add3-90788f94b69d",
+    "name" : "ff_pl_ff_source",
+    "serviceType" : "source",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "siagent.log"
+    }, {
+      "key" : "initialPosition",
+      "value" : "Current Time"
+    }, {
+      "key" : "rolloverPattern",
+      "value" : null
+    }, {
+      "key" : "tailingMode",
+      "value" : "Single file"
+    } ],
+    "connectionId" : "01000I0B00000000002O",
+    "type" : "",
+    "metaMetadata" : ""
+  }, {
+    "id" : "c4c046e5-bdf0-4ae8-985b-d97b83ea654e",
     "name" : "ff_pl_ff_target",
     "serviceType" : "target",
     "config" : [ {
@@ -23,29 +43,9 @@
     "connectionId" : "01000I0B00000000002P",
     "type" : "",
     "metaMetadata" : ""
-  }, {
-    "id" : "c8b1b211-bcaa-42e0-b244-f2730b2a4cda",
-    "name" : "ff_pl_ff_source",
-    "serviceType" : "source",
-    "config" : [ {
-      "key" : "_nativeName",
-      "value" : "siagent.log"
-    }, {
-      "key" : "initialPosition",
-      "value" : "Current Time"
-    }, {
-      "key" : "rolloverPattern",
-      "value" : null
-    }, {
-      "key" : "tailingMode",
-      "value" : "Single file"
-    } ],
-    "connectionId" : "01000I0B00000000002O",
-    "type" : "",
-    "metaMetadata" : ""
   } ],
   "edges" : [ {
-    "id" : "b5a685e6-8971-46c9-93af-42ff80b52308",
+    "id" : "f17697aa-083e-469a-8190-217b7a233772",
     "name" : "edge0",
     "from" : "ff_pl_ff_source",
     "to" : "ff_pl_ff_target",
@@ -65,7 +65,8 @@
     "project" : "Chiru",
     "agentId" : "01000I25000000000006",
     "messageFormat" : "binary",
-    "environmentType" : "Secure Agent"
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "1"
   },
-  "description" : null
+  "description" : "c111"
 }

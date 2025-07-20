@@ -16,17 +16,17 @@
         "value" : "4bv0epiG1qciZpbVlPvZIG"
       }, {
         "name" : "version",
-        "value" : "1"
+        "value" : "2"
       } ],
       "additionalInfo" : {
-        "description" : null,
+        "description" : "c111",
         "contentType" : "Binary",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-07-20T06:03:40.478Z",
+  "updateTime" : "2025-07-20T06:04:16.774Z",
   "objectRefs" : [ {
     "id" : "gdh3K66l98TlbcqqHIwTAq",
     "name" : "ip-10-28-137-186.ap-northeast-1.compute.internal",
