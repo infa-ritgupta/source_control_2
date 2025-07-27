@@ -1,1 +1,74 @@
-{"common":{"sourceConnectionId":"00254D0B000000000026","targetConnectionId":"00254D0B000000000027","taskMode":"UNLOAD","schedulerId":"","runtimeSettings":{"latency":10,"targetSchemaCreationMode":"CREATE_TARGET","directoryPerTable":true,"targetEncodingFormat":"CSV","enableAuditColumns":false,"rowsPerTargetFile":100000,"kafkaTargetAttributes":{"topicPerTable":false,"topicName":null,"tablePrefix":null,"tableSuffix":null,"includeSchemaName":false,"asyncWrite":true,"alternateSerializer":false,"kafkaProducerProps":null},"avroTargetAttributes":null,"avroAsParquetRequested":false,"parquetTargetAttributes":null,"snowflakeTargetAttributes":{"stage":"chiru"},"cdcCompatibleFormat":false,"cdcStartPoint":null,"targetCompressionType":"NONE","useV2NamingConventions":true,"sourcePropsMap":{"unloadIncludeViews":"false","unloadFlashbackDisabled":"true"},"targetPropsMap":{"targetBucket":"","targetDirectory":""},"runtimePropsMap":{},"historyManagerSettings":null},"runtimeEnvId":"00254D25000000000002","taskCreationSource":null,"cdcGroupInmdtStrgConfig":{"cdcGroupTaskId":"","cdcGroupTaskName":""}},"replicationRules":{"source":"AUSQA","target":"CHIRU_STRESS1","overrides":{"tableRules":[],"fieldRules":[]},"sourceSet":[{"op":"+","pattern":"CHIRU_TEST11","fieldsSet":[],"schema":""}],"schemaChangeHandlingOptions":[],"columnTransformations":[]},"datatypeChangeRules":[],"dataFilterConditions":[],"version":0}
+{
+  "common" : {
+    "sourceConnectionId" : "01012R0B000000000026",
+    "targetConnectionId" : "01012R0B000000000029",
+    "taskMode" : "UNLOAD",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : true,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "chiru"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : null,
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "unloadIncludeViews" : "false",
+        "unloadFlashbackDisabled" : "true"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : ""
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "01012R25000000000002",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "AUSQA",
+    "target" : "CHIRU_PG",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "CHIRU_TEST11",
+        "target" : "alertcheck_17thsept"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "CHIRU_TEST11",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 0
+}
