@@ -1,0 +1,39 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "4xfcJRh07o9hOf5dIXB4UX",
+  "name" : "Gitpullandpush",
+  "id" : 209062,
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "local"
+  },
+  "targetConnection" : {
+    "type" : "Advanced SFTP V2",
+    "name" : "autosftp",
+    "connId" : "01001D0B000000000JUC"
+  },
+  "lastModified" : 1754578353000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "*.txt",
+    "src.file.delete" : "KEEP",
+    "src.download.path" : "/root/test",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "01001D25000000000002",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "209062",
+  "vcsExportTime" : "2025-08-07 20:23:05 IST"
+}
