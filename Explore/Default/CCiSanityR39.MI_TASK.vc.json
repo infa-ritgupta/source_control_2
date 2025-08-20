@@ -1,0 +1,47 @@
+{
+  "orgId" : "e1Zy8WzyM61c5JCfacE5sR",
+  "icsGuid" : "5rhf9rZYMWtb1uoX4WrAGC",
+  "name" : "CCiSanityR39",
+  "id" : 12724,
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "AmazonS3",
+    "name" : "autos3",
+    "connId" : "0023XR0B000000000DP6"
+  },
+  "targetConnection" : {
+    "type" : "Azure Data Lake Gen2",
+    "name" : "autoazurev2",
+    "connId" : "0023XR0B000000000DPF"
+  },
+  "lastModified" : 1649607843000,
+  "sourceOptions" : {
+    "src.file.pattern" : "*.txt",
+    "downloadPartSize" : "50",
+    "multipartDownloadThreshold" : "100",
+    "filePickupOption" : "PATTERN",
+    "acclerationAction" : "DISABLED",
+    "filePatternFilter" : "true",
+    "encryption" : "None",
+    "src.file.delete" : "KEEP",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "s3SourceLocation" : "t-shain-mum/suraj/qa/test/RSFiles"
+  },
+  "targetOptions" : {
+    "compression" : "None",
+    "fileExistsAction" : "OVERWRITE",
+    "adlsGen2TargetLocation" : "/B2B/tgt",
+    "blockSize" : "8388608"
+  },
+  "agentGroup" : "0023XR2500000000000T",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "identifier" : "12724",
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "vcsExportTime" : "2025-08-20 00:54:41 PDT"
+}
