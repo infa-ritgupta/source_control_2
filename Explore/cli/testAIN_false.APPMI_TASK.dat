@@ -1,0 +1,90 @@
+{
+  "common" : {
+    "sourceConnectionId" : "01CHHP0B00000000000K",
+    "targetConnectionId" : "01CHHP0B00000000000B",
+    "taskMode" : "UNLOAD",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "rg_stage"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : null,
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "50000",
+        "selectionMode" : "RULE_BASED",
+        "ai.salesforce.unload.api.type" : "bulkv2",
+        "salesforce.decimal.trim.scale" : "true",
+        "ai.unload.fetch.deleted.archived.data" : "false",
+        "salesforce.bulkv2.enable.partitioning" : "false"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.target.columns.cycleId" : "false",
+        "writerSnowflakeIngestionMethod" : "",
+        "rat.target.columns.last.replicated.time" : "false",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "01CHHP25000000000002",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "SALESFORCE",
+    "target" : "A00RG",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "*_1"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "BOOK__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "-",
+      "pattern" : "PEN__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 26
+}
