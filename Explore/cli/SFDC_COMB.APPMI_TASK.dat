@@ -3,11 +3,11 @@
     "sourceConnectionId" : "0195HS0B0000000000CS",
     "targetConnectionId" : "0195HS0B000000000043",
     "taskMode" : "CDC_COMBINED",
-    "schedulerId" : null,
+    "schedulerId" : "",
     "runtimeSettings" : {
       "latency" : 10,
       "targetSchemaCreationMode" : "CREATE_TARGET",
-      "directoryPerTable" : true,
+      "directoryPerTable" : false,
       "targetEncodingFormat" : "CSV",
       "enableAuditColumns" : false,
       "rowsPerTargetFile" : 10000,
@@ -29,35 +29,46 @@
         "compressionLevel" : 1
       },
       "avroAsParquetRequested" : false,
-      "parquetTargetAttributes" : {
-        "pageSize" : 1048576,
-        "rowGroupSize" : 134217728,
-        "dictionaryPageSize" : "SIZE_1_MB",
-        "maxPaddingSizeSize" : "PADDING_0",
-        "usingDictionaryEncoding" : true,
-        "compressionType" : "UNCOMPRESSED"
-      },
+      "parquetTargetAttributes" : null,
       "snowflakeTargetAttributes" : {
         "stage" : "stage"
       },
       "cdcCompatibleFormat" : false,
       "cdcStartPoint" : {
         "type" : "LATEST",
-        "value" : ""
+        "value" : null
       },
       "targetCompressionType" : "NONE",
       "useV2NamingConventions" : null,
       "sourcePropsMap" : {
         "ai.fetch.size" : "50000",
+        "selectionMode" : "RULE_BASED",
         "ai.fetch.size.cdc" : "2000",
         "ai.cdc.interval.days" : "0",
         "ai.cdc.interval.mins" : "2",
         "ai.cdc.interval.hours" : "0",
+        "appmi.enable.verbose.log" : "true",
         "ai.salesforce.unload.api.type" : "bulkv2",
         "salesforce.decimal.trim.scale" : "true",
-        "ai.unload.fetch.deleted.archived.data" : "false"
+        "ai.unload.fetch.deleted.archived.data" : "false",
+        "salesforce.bulkv2.enable.partitioning" : "false"
       },
-      "targetPropsMap" : { },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
+        "rat.audit.columns.optype" : "false",
+        "rat.audit.columns.opowner" : "false",
+        "rat.target.columns.cycleId" : "false",
+        "writerSnowflakeIngestionMethod" : "",
+        "rat.cdcfile.target.tag.directories" : "false",
+        "writerSnowflakeDeferredMergeInterval" : "3600",
+        "rat.target.columns.last.replicated.time" : "false",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
       "runtimePropsMap" : {
         "writerRecoveryEnableCycleUpdates" : "false"
       },
@@ -114,7 +125,10 @@
     } ],
     "columnTransformations" : [ ]
   },
-  "datatypeChangeRules" : [ ],
+  "datatypeChangeRules" : [ {
+    "source" : "STRING(%)",
+    "target" : "VARCHAR(65500)"
+  } ],
   "dataFilterConditions" : [ ],
-  "version" : 0
+  "version" : 26
 }
