@@ -1,0 +1,95 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0195HS0B00000000006C",
+    "targetConnectionId" : "0195HS0B00000000007E",
+    "taskMode" : "UNLOAD",
+    "schedulerId" : null,
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : true,
+      "targetEncodingFormat" : "AVRO",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : true,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : {
+        "avroFormatType" : "AVRO_FLAT",
+        "avroSerializationType" : "BINARY",
+        "schemaDirectory" : "/tmp",
+        "compressionType" : "BZIP2",
+        "compressionLevel" : 1
+      },
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : {
+        "pageSize" : 1048576,
+        "rowGroupSize" : 134217728,
+        "dictionaryPageSize" : "SIZE_1_MB",
+        "maxPaddingSizeSize" : "PADDING_0",
+        "usingDictionaryEncoding" : true,
+        "compressionType" : "UNCOMPRESSED"
+      },
+      "snowflakeTargetAttributes" : {
+        "stage" : null
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : null,
+      "targetCompressionType" : "DEFLATE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "5000",
+        "netsuite.decimal.trim.scale" : "true"
+      },
+      "targetPropsMap" : {
+        "targetDirectory" : "directory",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optype" : "false"
+      },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0195HS250000000000HC",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "NETSUITE",
+    "target" : "",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "*_1CLI"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "CUSTOMRECORD800",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "-",
+      "pattern" : "Book",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 0
+}
