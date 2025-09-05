@@ -1,0 +1,122 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0195HS0B00000000003S",
+    "targetConnectionId" : "0195HS0B00000000007E",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "UNDEFINED",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "STAGE"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "CDC_COMBINED",
+        "lobsEnabled" : "false",
+        "selectionMode" : "BROWSE_BASED",
+        "dbmi.cdc.technique" : "LOG_BASED_CDC",
+        "readerInputIsPersisted" : "false",
+        "dbmi.cdc.query.based.column.type" : "COLUMN_TYPE_TIMESTAMP",
+        "unload.enable.source.partitioning" : "false"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : "QA",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.optype" : "true",
+        "S3FileTargetEncryptionType" : "NONE",
+        "rat.target.schema.directory" : "{TaskTargetDirectory}/data/{TableName}/schema",
+        "rat.target.useConnectionDir" : "true",
+        "rat.cdcfile.target.directory" : "QA",
+        "rat.cdcfile.target.data.directory" : "{TaskTargetDirectory}/data/{TableName}/data",
+        "rat.cdcfile.target.tag.directories" : "false",
+        "rat.cdcfile.target.contents.directory" : "{TaskTargetDirectory}/cycle/contents",
+        "rat.cdcfile.target.contents.listfiles" : "false",
+        "formatEncoderIncludeInfaBigIntSequence" : "false",
+        "rat.cdcfile.target.completion.directory" : "{TaskTargetDirectory}/cycle/completed",
+        "rat.cdcfile.target.data.directory.partitioning" : "true",
+        "rat.cdcfile.target.summary.directory.partitioning" : "true"
+      },
+      "runtimePropsMap" : {
+        "rat.cdcfile.cycle.dml.limit" : "10000",
+        "rat.cdcfile.lowact.flush.mins" : "0",
+        "rat.cdcfile.lowact.flush.hours" : "0",
+        "rat.cdcfile.cycle.interval.mins" : "15",
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0195HS250000000000HC",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "SUPERPIPE_AUTO",
+    "target" : "",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "COMB_*"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "-",
+      "pattern" : "*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "AUDIT_TEST",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "REPLICATE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 26
+}
