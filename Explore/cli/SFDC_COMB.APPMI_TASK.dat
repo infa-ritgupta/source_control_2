@@ -1,0 +1,120 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0195HS0B0000000000CS",
+    "targetConnectionId" : "0195HS0B000000000043",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : null,
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : true,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 10000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : true,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : {
+        "avroFormatType" : "AVRO_GENERIC",
+        "avroSerializationType" : "BINARY",
+        "schemaDirectory" : null,
+        "compressionType" : "UNCOMPRESSED",
+        "compressionLevel" : 1
+      },
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : {
+        "pageSize" : 1048576,
+        "rowGroupSize" : 134217728,
+        "dictionaryPageSize" : "SIZE_1_MB",
+        "maxPaddingSizeSize" : "PADDING_0",
+        "usingDictionaryEncoding" : true,
+        "compressionType" : "UNCOMPRESSED"
+      },
+      "snowflakeTargetAttributes" : {
+        "stage" : "stage"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : ""
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : null,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "50000",
+        "ai.fetch.size.cdc" : "2000",
+        "ai.cdc.interval.days" : "0",
+        "ai.cdc.interval.mins" : "2",
+        "ai.cdc.interval.hours" : "0",
+        "ai.salesforce.unload.api.type" : "bulkv2",
+        "salesforce.decimal.trim.scale" : "true",
+        "ai.unload.fetch.deleted.archived.data" : "false"
+      },
+      "targetPropsMap" : { },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0195HS250000000000HC",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "SALESFORCE",
+    "target" : "A00RG",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "*_1CLI"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "PEN__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "BANK__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "-",
+      "pattern" : "BOOK__c",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "STOP_TABLE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 0
+}
