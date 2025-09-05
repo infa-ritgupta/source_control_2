@@ -1,0 +1,101 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0195HS0B000000000069",
+    "targetConnectionId" : "0195HS0B000000000043",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : null,
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : true,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 10000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : true,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : {
+        "avroFormatType" : "AVRO_GENERIC",
+        "avroSerializationType" : "BINARY",
+        "schemaDirectory" : null,
+        "compressionType" : "UNCOMPRESSED",
+        "compressionLevel" : 1
+      },
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : {
+        "pageSize" : 1048576,
+        "rowGroupSize" : 134217728,
+        "dictionaryPageSize" : "SIZE_1_MB",
+        "maxPaddingSizeSize" : "PADDING_0",
+        "usingDictionaryEncoding" : true,
+        "compressionType" : "UNCOMPRESSED"
+      },
+      "snowflakeTargetAttributes" : {
+        "stage" : "stage_1"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : ""
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : null,
+      "sourcePropsMap" : { },
+      "targetPropsMap" : { },
+      "runtimePropsMap" : {
+        "writerRecoveryEnableCycleUpdates" : "true"
+      },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0195HS250000000000HC",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "DINESH",
+    "target" : "A2",
+    "overrides" : {
+      "tableRules" : [ {
+        "source" : "*",
+        "target" : "*_1"
+      } ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "table_0001",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "REPLICATE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "version" : 0
+}
