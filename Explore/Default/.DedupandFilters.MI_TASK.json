@@ -13,14 +13,14 @@
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "saved2",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-11-06T10:42:34.055Z",
+  "updateTime" : "2025-11-06T10:44:12.265Z",
   "objectRefs" : [ {
     "id" : "3vapzRzNLSzk9dWeHEgQA6",
     "name" : "invfmilinux01.informatica.com",

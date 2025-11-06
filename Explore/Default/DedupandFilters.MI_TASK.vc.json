@@ -3,6 +3,7 @@
   "icsGuid" : "kmwFBRePHwcbPE7SsNeEU1",
   "name" : "DedupandFilters",
   "id" : 28895,
+  "description" : "saved2",
   "sourceType" : "CONNECTION",
   "sourceConnection" : {
     "type" : "AmazonS3",
@@ -14,7 +15,7 @@
     "name" : "Aautos3",
     "connId" : "0102X40B0000000000E9"
   },
-  "lastModified" : 1762402572000,
+  "lastModified" : 1762425827000,
   "sourceOptions" : {
     "src.file.pattern" : "*.txt",
     "downloadPartSize" : "50",
@@ -52,5 +53,5 @@
   "fileListenerAsSource" : false,
   "fileListenerAsTrigger" : false,
   "identifier" : "28895",
-  "vcsExportTime" : "2025-11-06 02:42:33 PST"
+  "vcsExportTime" : "2025-11-06 02:44:12 PST"
 }
