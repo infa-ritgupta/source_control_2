@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "6jhamPiocurcawAu7HUNK9",
+    "id" : "bCHVYU4QNIXkFZPaUc3VSj",
     "name" : "KafkaToKafka_Git",
     "type" : "SIDataflow",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "ce715500-2fca-4c93-96c3-e970ba604265"
+        "repoHandle" : "d1d604c0-4471-4397-a132-94b42c385cff"
       },
       "contextAttributes" : [ {
         "name" : "parentId",
@@ -26,7 +26,7 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-11-12T15:45:36.334Z",
+  "updateTime" : "2025-11-12T19:52:33.546Z",
   "objectRefs" : [ {
     "id" : "0xiw4ESTua7gA37VRMSq8M",
     "name" : "SIAutomation_Kafka_2025.10.M",
