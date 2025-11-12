@@ -1,0 +1,10 @@
+{
+  "parentId" : "eLveSXjEsOQlh4jiFjEQOT",
+  "version" : 1,
+  "blob" : "{\"agentId\":\"01000I25000000000002\",\"nodes\":[{\"id\":\"370b57f1-dd3b-4d93-ad3c-543535e71d17\",\"name\":\"KafkaToKafka_git_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"kafkagitsrcrel\"}],\"connectionId\":\"01000I0B00000000003E\"},{\"id\":\"3357abeb-49bd-4b89-b1ec-67658caea17a\",\"name\":\"KafkaToKafka_Git_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"kafkastopgittarrel\"}],\"connectionId\":\"01000I0B00000000003E\"}],\"edges\":[{\"id\":\"73eca8eb-b9fe-4341-9b81-bb8a8c354ae2\",\"name\":\"KafkaToKafka_git_sourceKafkaToKafka_Git_target\",\"from\":\"KafkaToKafka_git_source\",\"to\":\"KafkaToKafka_Git_target\",\"config\":[]}],\"runtimeOptions\":{\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"config\":[]}}",
+  "description" : "TestAutomation",
+  "customAttributes" : {
+    "project" : "RestAutomationNew",
+    "environmentType" : "Secure Agent"
+  }
+}
