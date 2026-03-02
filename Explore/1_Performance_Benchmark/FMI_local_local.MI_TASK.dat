@@ -1,0 +1,51 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "9GVCfr4MWCWftID6NvM4I0",
+  "name" : "FMI_local_local",
+  "id" : 231709,
+  "description" : "",
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "local",
+    "name" : "",
+    "displayName" : null,
+    "connId" : ""
+  },
+  "targetConnection" : {
+    "type" : "local",
+    "name" : "",
+    "displayName" : null,
+    "connId" : ""
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1772436499000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "*txt",
+    "src.file.delete" : "KEEP",
+    "src.download.path" : "/root/test",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/test2"
+  },
+  "agentGroup" : "01001D25000000000002",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : null,
+  "fileListenerName" : null,
+  "fileListenerAction" : null,
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "231709"
+}
