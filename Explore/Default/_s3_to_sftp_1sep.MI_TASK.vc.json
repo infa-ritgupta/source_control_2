@@ -1,0 +1,45 @@
+{
+  "orgId" : "htFQB0bbQcwiYw8ZxValSw",
+  "icsGuid" : "i7vbYwSCL2yiYvywEBRNWn",
+  "name" : "_s3_to_sftp_1sep",
+  "id" : 114283,
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "AmazonS3",
+    "name" : "Aautos3",
+    "connId" : "01001D0B000000000JUD"
+  },
+  "targetConnection" : {
+    "type" : "Advanced SFTP V2",
+    "name" : "autosftp",
+    "connId" : "01001D0B000000000JUC"
+  },
+  "lastModified" : 1662030565000,
+  "sourceOptions" : {
+    "src.file.pattern" : "*",
+    "downloadPartSize" : "50",
+    "multipartDownloadThreshold" : "100",
+    "filePickupOption" : "PATTERN",
+    "acclerationAction" : "DISABLED",
+    "filePatternFilter" : "true",
+    "encryption" : "None",
+    "src.file.delete" : "KEEP",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false",
+    "s3SourceLocation" : "t-shain-mum/aditi/files"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "/root/target"
+  },
+  "agentGroup" : "01001D25000000000002",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "114283",
+  "vcsExportTime" : "2026-03-11 10:48:47 IST"
+}
