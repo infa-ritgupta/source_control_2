@@ -1,0 +1,93 @@
+{
+  "objectInfo" : {
+    "id" : "bPvw0XX0IeNkl3klIYIoYT",
+    "name" : "Error_Email_R39",
+    "type" : "SIDataflow",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0f16c031-0705-465f-b0ff-97dce7d76eb3"
+      },
+      "contextAttributes" : [ {
+        "name" : "parentId",
+        "value" : "h2mMJZVUgYTh4r8A1nJpmb"
+      }, {
+        "name" : "version",
+        "value" : "7"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2026-04-26T06:06:33.665Z",
+  "objectRefs" : [ {
+    "id" : "0Qoqcj9Dy35lXLLKRCYTGd",
+    "name" : "SIAutomation_Tailfile_2023.04.M",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01000I0B000000000009"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "724vaTREokwdj4UGLgXfse",
+    "name" : "invprodcdwdl02.informatica.com",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01000I25000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "hWXAauEmxaWl1ViImWZscu",
+    "name" : "SIAutomation_Kafka_2023.04.M",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01000I0B000000000008"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

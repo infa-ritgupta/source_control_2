@@ -1,0 +1,13 @@
+{
+  "parentId" : "h2mMJZVUgYTh4r8A1nJpmb",
+  "version" : 7,
+  "blob" : "{\"agentId\":\"01000I25000000000002\",\"nodes\":[{\"id\":\"de6b2c0a-e929-40df-8fbb-deddd51b1222\",\"name\":\"Error_Email_R39_source\",\"serviceType\":\"source\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"ger\"},{\"key\":\"initialPosition\",\"value\":\"Current Time\"},{\"key\":\"rolloverPattern\",\"value\":null},{\"key\":\"tailingMode\",\"value\":\"Single file\"}],\"connectionId\":\"01000I0B000000000009\",\"type\":\"\",\"metaMetadata\":\"\"},{\"id\":\"19d20624-7437-4914-b7a3-3e0228e82e8f\",\"name\":\"Error_Email_R39_target\",\"serviceType\":\"target\",\"config\":[{\"key\":\"_nativeName\",\"value\":\"Topics/tar\"},{\"key\":\"batchSize\",\"value\":\"1048576\"},{\"key\":\"mdFetchTimeout\",\"value\":\"5000\"},{\"key\":\"producerProperties\",\"value\":null}],\"connectionId\":\"01000I0B000000000008\",\"type\":\"\",\"metaMetadata\":\"\"}],\"edges\":[{\"id\":\"5ab373fc-8212-4db4-ad8d-495cf5b1be9f\",\"name\":\"edge0\",\"from\":\"Error_Email_R39_source\",\"to\":\"Error_Email_R39_target\",\"type\":\"success\",\"config\":[],\"metaMetadata\":\"\"}],\"runtimeOptions\":{\"errorTolerance\":{\"errorCount\":null,\"time\":{\"value\":1,\"unit\":\"MINUTES\"}},\"email\":\"dtambe@informatica.com,saroy@informatica.com\",\"maxLogSize\":{\"value\":10,\"unit\":\"MB\"},\"logLevel\":\"INFO\",\"config\":[]}}",
+  "description" : null,
+  "customAttributes" : {
+    "project" : "saroy",
+    "agentId" : "01000I25000000000002",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "6"
+  }
+}
