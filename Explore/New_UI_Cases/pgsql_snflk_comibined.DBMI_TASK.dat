@@ -1,0 +1,101 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0198I00B00000000000N",
+    "targetConnectionId" : "0198I00B000000000007",
+    "taskMode" : "CDC_COMBINED",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "KARTHEEK"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : {
+        "type" : "LATEST",
+        "value" : null
+      },
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "loadType" : "CDC_COMBINED",
+        "journalName" : "",
+        "lobsEnabled" : "true",
+        "selectionMode" : "RULE_BASED",
+        "readerInputIsPersisted" : "false",
+        "pwx.cdcreader.postgresql.connection.repl.plugin" : "pgoutput",
+        "pwx.cdcreader.postgresql.connection.repl.slotname" : "pgsql_test1",
+        "pwx.cdcreader.postgresql.connection.repl.publication" : "test"
+      },
+      "targetPropsMap" : {
+        "applyMode" : "standard",
+        "targetBucket" : "",
+        "targetDirectory" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.optype" : "false",
+        "rat.cdcfile.target.directory" : "",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0198I025000000000003",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "test",
+    "target" : "KARTHEEK",
+    "overrides" : {
+      "tableRules" : [ ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "new_tab*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ {
+      "pattern" : "*",
+      "changetypes" : [ {
+        "op" : "ADD_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "MODIFY_COLUMN",
+        "action" : "REPLICATE"
+      }, {
+        "op" : "DROP_COLUMN",
+        "action" : "IGNORE"
+      }, {
+        "op" : "RENAME_COLUMN",
+        "action" : "IGNORE"
+      } ]
+    } ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "dataAccessManagement" : null,
+  "version" : 21
+}

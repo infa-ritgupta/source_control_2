@@ -1,0 +1,78 @@
+{
+  "common" : {
+    "sourceConnectionId" : "0198I00B00000000000P",
+    "targetConnectionId" : "0198I00B000000000007",
+    "taskMode" : "UNLOAD",
+    "schedulerId" : "",
+    "runtimeSettings" : {
+      "latency" : 10,
+      "targetSchemaCreationMode" : "CREATE_TARGET",
+      "directoryPerTable" : false,
+      "targetEncodingFormat" : "CSV",
+      "enableAuditColumns" : false,
+      "rowsPerTargetFile" : 100000,
+      "kafkaTargetAttributes" : {
+        "topicPerTable" : false,
+        "topicName" : null,
+        "tablePrefix" : null,
+        "tableSuffix" : null,
+        "includeSchemaName" : false,
+        "asyncWrite" : true,
+        "alternateSerializer" : false,
+        "kafkaProducerProps" : null
+      },
+      "avroTargetAttributes" : null,
+      "avroAsParquetRequested" : false,
+      "parquetTargetAttributes" : null,
+      "snowflakeTargetAttributes" : {
+        "stage" : "KARTHEEK"
+      },
+      "cdcCompatibleFormat" : false,
+      "cdcStartPoint" : null,
+      "targetCompressionType" : "NONE",
+      "useV2NamingConventions" : true,
+      "sourcePropsMap" : {
+        "ai.fetch.size" : "100",
+        "selectionMode" : "RULE_BASED",
+        "ai.workday.services" : "Absence_Management",
+        "ai.workday.output.type" : "JSON",
+        "workday.reports.number" : "SINGLE_REPORT",
+        "workday.replication.type" : "SOAP"
+      },
+      "targetPropsMap" : {
+        "targetBucket" : "",
+        "targetDirectory" : "",
+        "auditColumnsPrefix" : "INFA_",
+        "targetIdentifiersEnableCaseTransformation" : "false"
+      },
+      "runtimePropsMap" : { },
+      "historyManagerSettings" : null
+    },
+    "runtimeEnvId" : "0198I025000000000003",
+    "taskCreationSource" : null,
+    "cdcGroupInmdtStrgConfig" : {
+      "cdcGroupTaskId" : "",
+      "cdcGroupTaskName" : ""
+    }
+  },
+  "replicationRules" : {
+    "source" : "Human Capital Management",
+    "target" : "KARTHEEK_WDAY_TEST",
+    "overrides" : {
+      "tableRules" : [ ],
+      "fieldRules" : [ ]
+    },
+    "sourceSet" : [ {
+      "op" : "+",
+      "pattern" : "*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    } ],
+    "schemaChangeHandlingOptions" : [ ],
+    "columnTransformations" : [ ]
+  },
+  "datatypeChangeRules" : [ ],
+  "dataFilterConditions" : [ ],
+  "dataAccessManagement" : null,
+  "version" : 21
+}
