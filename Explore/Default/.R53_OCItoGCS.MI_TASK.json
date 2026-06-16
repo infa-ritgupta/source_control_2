@@ -13,14 +13,14 @@
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "First Checked out",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2026-06-16T06:10:44.126Z",
+  "updateTime" : "2026-06-16T06:13:50.339Z",
   "objectRefs" : [ {
     "id" : "8deOBS0QcXCjf6tkkILPyX",
     "name" : "autogcs",

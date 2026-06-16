@@ -3,7 +3,7 @@
   "icsGuid" : "60s3y3rxoiSiXHVVrByYs8",
   "name" : "R53_OCItoGCS",
   "id" : 134470,
-  "description" : "",
+  "description" : "First Checked out",
   "sourceType" : "CONNECTION",
   "sourceConnection" : {
     "type" : "Oracle Cloud Object Storage",
@@ -18,7 +18,7 @@
     "connId" : "0100150B000000000254"
   },
   "taskActions" : [ ],
-  "lastModified" : 1781590108000,
+  "lastModified" : 1781590314000,
   "sourceOptions" : {
     "filePatternFilter" : "true",
     "src.file.pattern" : "*.txt",
@@ -27,6 +27,7 @@
     "src.file.delete" : "KEEP",
     "src.download.path" : "fmi/suraj/qa/test/RSFiles",
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
     "src.file.pattern.type" : "WILDCARD",
     "batchSize" : "5",
     "fileStability" : "false"
