@@ -1,0 +1,54 @@
+{
+  "orgId" : "1vm325Q47logNWKJdsZCW3",
+  "icsGuid" : "60s3y3rxoiSiXHVVrByYs8",
+  "name" : "R53_OCItoGCS",
+  "id" : 134470,
+  "description" : "",
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "Oracle Cloud Object Storage",
+    "name" : "autoocs",
+    "displayName" : null,
+    "connId" : "0100150B000000002KPG"
+  },
+  "targetConnection" : {
+    "type" : "gcs",
+    "name" : "autogcs",
+    "displayName" : null,
+    "connId" : "0100150B000000000254"
+  },
+  "taskActions" : [ ],
+  "lastModified" : 1781590108000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "*.txt",
+    "downloadPartSize" : "32",
+    "multipartDownloadThreshold" : "64",
+    "src.file.delete" : "KEEP",
+    "src.download.path" : "fmi/suraj/qa/test/RSFiles",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "GCSTargetLocation" : "mibucketnew/suraj/qa/test/automation/Postactions",
+    "compression" : "None",
+    "fileExistsAction" : "OVERWRITE"
+  },
+  "agentGroup" : "01001525000000000005",
+  "job" : "",
+  "schedule" : "",
+  "fileListener" : null,
+  "fileListenerName" : null,
+  "fileListenerAction" : null,
+  "emailIds" : null,
+  "filePickupOption" : "PATTERN",
+  "lastRun" : null,
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "134470"
+}
