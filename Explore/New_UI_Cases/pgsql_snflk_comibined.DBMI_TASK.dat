@@ -47,13 +47,24 @@
       "targetPropsMap" : {
         "applyMode" : "standard",
         "targetBucket" : "",
-        "targetDirectory" : "",
         "auditColumnsPrefix" : "INFA_",
+        "rat.audit.columns.opseq" : "false",
+        "formatEncoderPrintHeader" : "false",
+        "rat.audit.columns.optime" : "false",
+        "rat.audit.columns.optxid" : "false",
         "rat.audit.columns.optype" : "false",
-        "rat.cdcfile.target.directory" : "",
+        "rat.audit.columns.opowner" : "false",
+        "rat.target.columns.cycleId" : "false",
+        "writerSnowflakeIngestionMethod" : "",
+        "rat.cdcfile.target.tag.directories" : "false",
+        "writerSnowflakeDeferredMergeInterval" : "3600",
+        "rat.target.columns.last.replicated.time" : "false",
         "targetIdentifiersEnableCaseTransformation" : "false"
       },
-      "runtimePropsMap" : { },
+      "runtimePropsMap" : {
+        "enableAutoTuning" : "false",
+        "writerRecoveryEnableCycleUpdates" : "false"
+      },
       "historyManagerSettings" : null
     },
     "runtimeEnvId" : "0198I025000000000003",
@@ -73,6 +84,11 @@
     "sourceSet" : [ {
       "op" : "+",
       "pattern" : "new_tab*",
+      "fieldsSet" : [ ],
+      "schema" : ""
+    }, {
+      "op" : "+",
+      "pattern" : "ab*",
       "fieldsSet" : [ ],
       "schema" : ""
     } ],
@@ -97,5 +113,5 @@
   "datatypeChangeRules" : [ ],
   "dataFilterConditions" : [ ],
   "dataAccessManagement" : null,
-  "version" : 21
+  "version" : 29
 }
